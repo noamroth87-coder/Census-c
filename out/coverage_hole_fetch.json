@@ -1,0 +1,88 @@
+{
+ "task3": {
+  "calls_used": 300,
+  "cap": 2000,
+  "rows": [
+   {
+    "token": "0x47883e389bb6be3650b0c0935b300b50a95fc072",
+    "arbs": 3310,
+    "at_block": 25445888,
+    "best_liquidity_usd": 0.0,
+    "route": "none",
+    "label": "GENUINELY-EXOTIC"
+   },
+   {
+    "token": "0x19640000000ba88d36206beb10d0e86011c8d08c",
+    "arbs": 1325,
+    "at_block": 25437659,
+    "best_liquidity_usd": 64.0,
+    "route": "v3:3000 vs WETH",
+    "label": "GENUINELY-EXOTIC"
+   },
+   {
+    "token": "0xaca92e438df0b2401ff60da7e4337b687a2435da",
+    "arbs": 1215,
+    "at_block": 25437606,
+    "best_liquidity_usd": 0.0,
+    "route": "v3:100 vs WETH",
+    "label": "GENUINELY-EXOTIC"
+   },
+   {
+    "token": "0x1223334444a7466fbf985b14e1f4edaf3883bca6",
+    "arbs": 978,
+    "at_block": 25437644,
+    "best_liquidity_usd": 348.0,
+    "route": "v3:3000 vs WETH",
+    "label": "GENUINELY-EXOTIC"
+   },
+   {
+    "token": "0x10dea67478c5f8c5e2d90e5e9b26dbe60c54d800",
+    "arbs": 968,
+    "at_block": 25437629,
+    "best_liquidity_usd": 5.0,
+    "route": "v3:3000 vs WETH",
+    "label": "GENUINELY-EXOTIC"
+   },
+   {
+    "token": "0x904567252d8f48555b7447c67dca23f0372e16be",
+    "arbs": 873,
+    "at_block": 25437686,
+    "best_liquidity_usd": 0.0,
+    "route": "v3:10000 vs USDC",
+    "label": "GENUINELY-EXOTIC"
+   },
+   {
+    "token": "0xc8fb80fcc03f699c70ff0cc08c09106288888888",
+    "arbs": 481,
+    "at_block": 25437731,
+    "best_liquidity_usd": 0.0,
+    "route": "none",
+    "label": "GENUINELY-EXOTIC"
+   },
+   {
+    "token": "0xe76c5b78f93909d34404e9eb4c1f19e7582a5de1",
+    "arbs": 473,
+    "at_block": 25437679,
+    "best_liquidity_usd": 0.0,
+    "route": "none",
+    "label": "GENUINELY-EXOTIC"
+   },
+   {
+    "token": "0x94314a14df63779c99c0764a30e0cd22fa78fc0e",
+    "arbs": 427,
+    "at_block": 25437624,
+    "best_liquidity_usd": 0.0,
+    "route": "none",
+    "label": "GENUINELY-EXOTIC"
+   },
+   {
+    "token": "0xde4ee8057785a7e8e800db58f9784845a5c2cbd6",
+    "arbs": 354,
+    "at_block": 25437861,
+    "best_liquidity_usd": 150.0,
+    "route": "v2:None vs WETH",
+    "label": "GENUINELY-EXOTIC"
+   }
+  ]
+ }
+}
