@@ -128,3 +128,95 @@ Bugs caught & fixed by the control before batch: flat DUST_WEI decimals trap in 
 
 ### Stopping
 - Window fixed at start (last 7 days by block timestamp); not extended mid-run. Whole window processed, then stopped. No opportunistic scope extension.
+
+---
+
+## Follow-up: cost-to-win and competition cross-sections
+
+*Computed only from the 87,918 fully-measured (confirmed) arbs in the existing dataset (the 71.3% coverage population), window 7.00 days. No re-scanning. Builder payment = coinbase transfer + any direct ETH/token transfer to the block's fee recipient within the tx, as measured from callTracer + logs; ratios computed in ETH terms then shown as %. All [M].*
+
+### Task 1 — Spend-to-win (builder payment & total cost as % of gross) [M]
+
+Zero-builder-payment arbs (no coinbase/direct transfer to the builder; they bid via priority fee only, which is inside gas) are reported as a **separate row**, not blended into the payer medians. `builder%` = builder payment ÷ gross; `cost%` = (builder + gas) ÷ gross.
+
+| Scope | Row | Count | Share | builder% p25 | builder% med | builder% p75 | cost% p25 | cost% med | cost% p75 |
+|---|---|--:|--:|--:|--:|--:|--:|--:|--:|
+| **Overall** | builder-payers | 21,606 | 24.6% | 31.55% | 71.16% | 100.00% | 85.34% | 97.68% | 120.65% |
+| **Overall** | zero-builder | 66,312 | 75.4% | — | — | — | 14.46% | 80.83% | 97.81% |
+| <$10 | builder-payers | 20,185 | 25.7% | 32.55% | 69.90% | 100.00% | 85.98% | 97.82% | 122.50% |
+| <$10 | zero-builder | 58,392 | 74.3% | — | — | — | 29.89% | 87.92% | 98.06% |
+| $10-100 | builder-payers | 1,005 | 14.2% | 71.06% | 96.78% | 106.91% | 77.13% | 97.90% | 111.72% |
+| $10-100 | zero-builder | 6,084 | 85.8% | — | — | — | 0.53% | 1.55% | 6.03% |
+| $100-1k | builder-payers | 357 | 18.3% | 0.56% | 1.40% | 63.32% | 0.71% | 1.55% | 64.98% |
+| $100-1k | zero-builder | 1,596 | 81.7% | — | — | — | 0.14% | 0.38% | 1.19% |
+| >$1k | builder-payers | 59 | 19.7% | 0.08% | 0.35% | 2.43% | 0.10% | 0.43% | 2.50% |
+| >$1k | zero-builder | 240 | 80.3% | — | — | — | 0.03% | 0.09% | 0.21% |
+
+### Task 2 — Size-bucket × competition [M]
+
+| Bucket | Count | Count/day | Median net $ | p75 net $ | Distinct clusters | Top-1 cluster % of bucket net | Top-5 % of bucket net | Median gas used | Median tx index |
+|---|--:|--:|--:|--:|--:|--:|--:|--:|--:|
+| <$10 | 78,577 | 11,225 | 0.01 | 0.22 | 6,143 | 11.6% | 28.4% | 326,606 | 70 |
+| $10-100 | 7,089 | 1,013 | 17.64 | 33.74 | 1,913 | 8.9% | 25.3% | 415,333 | 30 |
+| $100-1k | 1,953 | 279 | 195.57 | 348.38 | 530 | 19.4% | 43.9% | 731,614 | 16 |
+| >$1k | 299 | 43 | 1,615.79 | 2,444.49 | 116 | 30.4% | 57.1% | 750,698 | 10 |
+
+> Cluster = set of arbs linked by a shared operator EOA (`tx.from`) or beneficiary contract (union-find). Top-k share is of that bucket's total measured net. Where a bucket's net is dominated by a few clusters the share is high; a negative/near-zero bucket net can distort shares (noted inline if it occurs).
+
+### Task 3 — Mempool-origin × profit cross-tab [M/E]
+
+| Origin | Count | Share of total net | Median net $ | Median builder% of gross |
+|---|--:|--:|--:|--:|
+| likely-public | 62,851 | 86.0% | 0.03 | 0.00% |
+| private-bundle | 21,607 | 13.3% | 0.00 | 71.15% |
+| undetermined | 3,460 | 0.7% | 0.63 | 0.00% |
+
+**Heuristic & how much to trust it.** The origin flag is *inferred from settlement mechanics, not observed*: an arb that transfers ETH/tokens to the block's fee recipient inside the tx (a coinbase payment) is flagged **private-bundle** (that is how searchers pay builders for off-mempool inclusion); an arb with no such transfer that instead carries a positive priority fee is flagged **likely-public**; anything else is **undetermined**. **Known failure modes:** (1) a private-bundle searcher can pay entirely via priority fee and emit no coinbase transfer — it is then indistinguishable from public flow and mislabeled likely-public, so *private is under-counted*; (2) some public-mempool bots also send a small coinbase tip, inflating private; (3) builders that receive payment via a *separate* bundle tx (not the arb tx itself) are invisible here. **Bottom line: the coinbase-transfer signal reliably identifies a floor on private flow, but the public/private split is a lower bound on private and cannot be treated as ground truth — treat it as directional, not exact.**
+
+### Task 4 — Top-10 cluster profiles [M]
+
+| # | Lead address | Arbs | Total net $ | Median net $ | Median builder% | Median gas used | Mempool mix (pub/priv/undet) | Dominant bucket (share of its net) | Clustering confidence |
+|--:|---|--:|--:|--:|--:|--:|---|---|---|
+| 1 | `0x1f2f10d1c4…` | 3,825 | 246,959 | 0.00 | 0.00% | 340,692 | 92/0/8% | >$1k (82%) | single address (direct) |
+| 2 | `0x6aba031549…` | 753 | 198,406 | 85.23 | 0.00% | 771,621 | 100/0/0% | $100-1k (51%) | funding-linked via 197 operator EOA(s), 1 contract(s); deployer not established |
+| 3 | `0xbee3211ab3…` | 580 | 55,669 | 1.99 | 14.49% | 496,033 | 0/100/0% | $100-1k (93%) | funding-linked via 10 operator EOA(s), 1 contract(s); deployer not established |
+| 4 | `0x01fdc48ba0…` | 41 | 47,000 | 930.51 | 0.63% | 636,381 | 0/100/0% | >$1k (86%) | funding-linked via 2 operator EOA(s), 1 contract(s); deployer not established |
+| 5 | `0x45e9b04942…` | 61 | 41,738 | 248.89 | 3.27% | 554,781 | 11/87/2% | >$1k (72%) | funding-linked via 6 operator EOA(s), 1 contract(s); deployer not established |
+| 6 | `0x9008d19f58…` | 3,855 | 38,660 | 0.71 | 0.00% | 609,552 | 100/0/0% | $100-1k (39%) | funding-linked via 16 operator EOA(s), 1 contract(s); deployer not established |
+| 7 | `0xbdb3ba9ffe…` | 1,546 | 28,943 | 1.55 | 0.00% | 879,000 | 100/0/0% | $100-1k (81%) | funding-linked via 2 operator EOA(s), 1 contract(s); deployer not established |
+| 8 | `0xd13be92afe…` | 1 | 26,742 | 26,741.59 | 0.00% | 1,948,730 | 100/0/0% | >$1k (100%) | single address (direct) |
+| 9 | `0x5d98f54d82…` | 45 | 17,887 | 7.91 | 2.06% | 429,896 | 7/93/0% | >$1k (80%) | single address (direct) |
+| 10 | `0x33b41fe18d…` | 24 | 13,212 | 250.78 | 0.00% | 566,442 | 100/0/0% | >$1k (65%) | funding-linked via 3 operator EOA(s), 1 contract(s); deployer not established |
+
+**Adjacency profile — NOT AVAILABLE from the stored dataset.** Per-arb victim-adjacency (backrun distance / share landing at victim-index+1 in the same block) requires each block's full receipt set to identify the specific victim swap; that is not stored in `arbs.jsonl` and recomputing it would require re-fetching block receipts (a re-crawl), which is out of scope for this follow-up. What IS stored is each arb's absolute `tx_index`; the median tx index per cluster is given below as a positional proxy (low index ⇒ top-of-block placement, typical of competitive backrunning; high index ⇒ later placement).
+
+| # | Lead address | Median tx index | % at index 0-1 (block top) |
+|--:|---|--:|--:|
+| 1 | `0x1f2f10d1c4…` | 60 | 4% |
+| 2 | `0x6aba031549…` | 13 | 12% |
+| 3 | `0xbee3211ab3…` | 19 | 11% |
+| 4 | `0x01fdc48ba0…` | 7 | 0% |
+| 5 | `0x45e9b04942…` | 4 | 0% |
+| 6 | `0x9008d19f58…` | 43 | 4% |
+| 7 | `0xbdb3ba9ffe…` | 1 | 55% |
+| 8 | `0xd13be92afe…` | 150 | 0% |
+| 9 | `0x5d98f54d82…` | 32 | 2% |
+| 10 | `0x33b41fe18d…` | 135 | 0% |
+
+### Task 5 — Dust boundary (gross below which median net ≤ $0) [M/derived]
+
+- **Break-even gross threshold [M/derived]:** ≈ **$0.034** gross profit. Arbs grossing below this have a **median net ≤ \$0** — builder payment + gas meet or exceed gross; above it the running median net turns positive. Found by bisecting the measured (gross, net) pairs for the sign change of the sub-\$T median net.
+- **Share below the boundary:** **7,532 of 87,918 arbs = 8.6%** gross below $0.034. (This chain's gas is cheap — ~\$0.10 median — so the break-even sits far below $1; on a higher-gas chain it would be much higher.)
+- **For context:** 19.6% of all 87,918 measured arbs are individually net ≤ \$0 (landed winners that failed to clear their own costs) [M].
+
+Supporting — median net by gross band:
+
+| Gross band | Count | Median net $ |
+|---|--:|--:|
+| $0-1 | 60,409 | 0.01 |
+| $1-2 | 6,671 | 0.71 |
+| $2-5 | 7,189 | 2.18 |
+| $5-10 | 4,308 | 5.62 |
+| $10-25 | 3,973 | 13.02 |
+| $25-100 | 3,116 | 37.54 |
+| ≥$100 | 2,252 | 228.07 |
