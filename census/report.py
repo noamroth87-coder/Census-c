@@ -44,7 +44,9 @@ def build():
     arbs = [r for r in arb_rows if r["verdict"] == "arb"]
     unpriceable = [r for r in arb_rows if r["verdict"] == "unpriceable"]
     failed = [r for r in arb_rows if r["verdict"] == "failed_measure"]
-    # detected arbs = confirmed + unpriceable + failed (all arb-shaped)
+    excluded = [r for r in arb_rows if r["verdict"] == "excluded_nonatomic"]
+    # detected atomic arbs = confirmed + unpriceable + failed. excluded_nonatomic are
+    # affirmatively-determined NON-arbs (redemption/inventory/drain) -> not in the denominator.
     detected = len(arbs) + len(unpriceable) + len(failed)
     measured_pct = 100*len(arbs)/detected if detected else 0
 
@@ -100,7 +102,7 @@ def build():
             buckets[bucket(r["gross_usd"])].append(r)
 
     return dict(w=w, control=control, gate=gate, span_days=span_days, n_blocks=n_blocks,
-                total_tx=total_tx, cls_tot=dict(cls_tot),
+                total_tx=total_tx, cls_tot=dict(cls_tot), excluded=excluded,
                 arbs=arbs, unpriceable=unpriceable, failed=failed, detected=detected,
                 measured_pct=measured_pct, clusters=clusters, cl_net=cl_net,
                 nets=nets, grosses=grosses, gases=gases, bidshares=bidshares,

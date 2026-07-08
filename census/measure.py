@@ -104,9 +104,14 @@ def measure_arb(receipt, block_ctx, res=None):
     # gross > 2 ETH) so that V4 flash-accounting / aggregator-settled small arbs (whose profit
     # token legitimately arrives from a non-pool settlement address, undercounting pool_volume)
     # are NOT swept up. Native ETH exempt (tracked via traces, not logs).
+    # A real atomic arb skims a thin spread: profit is a SMALL fraction of pool volume (empirically
+    # <5%; ratio<0.05). Profit >= 50% of the pool volume of that asset (ratio>0.5) implies a >200%
+    # single-tx return -- not arbitrage but redemption / inventory-realization / pool-drain / exploit.
+    # Gate on gross>2 ETH so V4/aggregator-settled small arbs (whose pool_volume is undercounted)
+    # are not swept up. Flagged records are EXCLUDED as non-atomic, not counted as arbs.
     pool_vol = (res.get("meta") or {}).get("pool_volume", {})
-    profit_exceeds_volume = any(
-        raw > 0 and not is_dust(asset, raw) and raw > pool_vol.get(asset, 0) * 5
+    high_margin = any(
+        raw > 0 and not is_dust(asset, raw) and raw > pool_vol.get(asset, 0) * 0.5
         for asset, raw in ben_tokens.items())
 
     # ---- value-based confirmation / routing ----
@@ -114,8 +119,8 @@ def measure_arb(receipt, block_ctx, res=None):
     num_prof = numeraire_profit(ben_tokens)
     if not tr.get("ok", False):
         verdict = "failed_measure"; reason = "trace_failed"
-    elif profit_exceeds_volume and gross_eth > 2.0:
-        verdict = "failed_measure"; reason = "profit_exceeds_swap_volume"  # suspect redemption/inventory, not atomic arb
+    elif high_margin and gross_eth > 2.0:
+        verdict = "excluded_nonatomic"; reason = "high_margin_nonatomic"  # redemption/inventory/drain, not atomic arb
     elif has_unpriceable_loss:
         verdict = "failed_measure"; reason = "unpriceable_outflow"
     elif abs(gross_eth) > SANE_GROSS_ETH or abs(net_eth) > SANE_GROSS_ETH:

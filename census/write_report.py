@@ -146,6 +146,26 @@ def main():
         for a, c in up_tokens.most_common(10):
             A(f"- `{a}`: {c}")
     A("")
+    # ---------- Excluded non-atomic ----------
+    exc = d.get("excluded", [])
+    if exc:
+        app_gross = sum((r.get("gross_usd") or 0) for r in exc)
+        app_net = sum((r.get("net_usd") or 0) for r in exc)
+        arb_net = d["total_net"]
+        arbshaped = len(exc) + d["detected"]
+        share_txs = 100*len(exc)/arbshaped if arbshaped else 0
+        inflate = (arb_net + app_net)/arb_net if arb_net else float("inf")
+        A("### Excluded: non-atomic high-margin events [M]")
+        A("")
+        A(f"{len(exc):,} txs ({share_txs:.1f}% of all arb-shaped txs) were detected as arb-shaped but "
+          f"**excluded as NON-arbitrage**: profit ≥50% of the DEX pool volume of the profit asset "
+          f"(ratio>0.5 ⇒ >200% single-tx return), impossible for spread arbitrage. These are "
+          f"redemptions / inventory-realization / pool-drains / exploits. Excluded from all arb stats "
+          f"and from the coverage denominator. Their *apparent* value (gross **${app_gross:,.0f}**, net "
+          f"**${app_net:,.0f}**) is NOT arb profit: had they been counted, measured net profit would "
+          f"jump from ${arb_net:,.0f} to ${arb_net+app_net:,.0f} — a **{inflate:.0f}×** inflation from "
+          f"this thin tail. Isolating them is the single most important correctness step in the census.")
+        A("")
     A("## 5. Failed-to-measure list [M]")
     A("")
     fr = Counter(r.get("reason") for r in d["failed"])
@@ -191,6 +211,13 @@ def write_methods(A, d):
       "single-tx cyclic test (a front-run leg ends holding the victim token, not net base asset). "
       "Flash-loan-wrapped and aggregator-routed arbs ARE captured (flash-loan repayment nets to ~0 in "
       "the borrowed token; the balance-delta cycle still resolves).")
+    A("- **Non-atomic-arb exclusion (self-financing / margin test):** profit in an asset cannot exceed "
+      "what was swapped through DEX pools. Events where profit ≥50% of the profit-asset's pool volume "
+      "(a >200% single-tx return, impossible for a spread arb) are excluded as redemptions / "
+      "inventory-realization / pool-drains / exploits — gated to gross>2 ETH so V4/aggregator-settled "
+      "small arbs (whose pool volume is undercounted) are not swept up. This one guard removed a "
+      "handful of events that otherwise carried ~98% of naive 'profit'. Borderline events just under "
+      "the 0.5 cut are retained and may include some non-arb value extraction.")
     A("- **Known bounds (documented, not hidden):** (a) arbs sweeping profit to a separate treasury "
       "address inside the tx fall to route_or_user; (b) pure native-ETH-settled arbs with no positive "
       "logged-token delta are under-counted; (c) token-denominated profits without a priceable pool are "
