@@ -6,3 +6,5 @@ out/*.output
 __pycache__/
 *.pyc
 out/progress.json
+out/oppage_run.log
+out/oppage_raw.json
