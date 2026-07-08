@@ -220,3 +220,74 @@ Supporting — median net by gross band:
 | $10-25 | 3,973 | 13.02 |
 | $25-100 | 3,116 | 37.54 |
 | ≥$100 | 2,252 | 228.07 |
+
+---
+
+## Follow-up 2: bid visibility and builder integration
+
+*Stored measured set + ONE bounded fetch of 496 block headers (fee-recipient + extra-data only; no receipts, no tx re-scan). Builders identified from extra-data tags, else labelled by fee-recipient address. Baseline builder share is computed over the 496 fetched blocks — these are arb-hosting blocks, not a uniform block sample, and n≈500 is noisy; raw counts are shown so significance is judgeable.*
+
+### Task 1 — Priority-fee audit & total bid (stored data) [M]
+
+Priority fee = (effective gas price − base fee) × gas used, USD-derived at the arb block. Total bid = priority fee + builder payment (coinbase/direct), as % of gross.
+
+| Bucket | Count | Priority fee $ p25 | med | p75 | Total-bid %gross p25 | med | p75 |
+|---|--:|--:|--:|--:|--:|--:|--:|
+| >$1k | 299 | 0.0199 | 0.4668 | 2.4898 | 0.01% | 0.08% | 0.29% |
+| $100-1k | 1,953 | 0.0191 | 0.3541 | 1.6447 | 0.08% | 0.39% | 1.45% |
+
+> **FLAG:** median total bid in the >$1k tier is **0.08% of gross** — near-zero. Payment for inclusion is either genuinely absent (these winners are not paying to win on-chain) or **invisible** to on-chain measurement (off-chain / out-of-band settlement). On-chain data alone cannot distinguish the two; that is the motivation for Tasks 2–4.
+
+### Task 2 — Builder identity for >$1k blocks (bounded fetch) [M]
+
+297 distinct blocks host the 299 >$1k arbs; all fetched. Builder distribution (by block), with the fetched-set baseline for reference:
+
+| Builder | >$1k blocks | >$1k share | Baseline share (all fetched) |
+|---|--:|--:|--:|
+| Titan | 182 | 61.3% | 63.9% |
+| BuilderNet | 37 | 12.5% | 12.1% |
+| Quasar | 32 | 10.8% | 12.5% |
+| bobTheBuilder | 21 | 7.1% | 4.2% |
+| Eureka | 17 | 5.7% | 5.4% |
+| fee-recipient:0x6c42a0b5 | 2 | 0.7% | 0.4% |
+| beaverbuild | 2 | 0.7% | 0.4% |
+| BTCS Builder+ | 2 | 0.7% | 0.4% |
+| fee-recipient:0x3bee5122 | 2 | 0.7% | 0.4% |
+
+### Task 3 — Winner × builder cross-tab, >$1k tier (top 10 clusters by arb count) [M]
+
+Verdict is mechanical: **INTEGRATED** = top-builder share >80% AND >2× that builder's baseline; **CONCENTRATED** = >2× baseline but ≤80%; **DISTRIBUTED** = roughly tracks baseline. All >$1k blocks were fetched, so labeled=total here. Small arb counts ⇒ read verdicts with the raw counts.
+
+| # | Lead address | Arbs (labeled/total) | Distinct builders | Top builder | Top share | Baseline share | Verdict | Raw builder counts |
+|--:|---|--:|--:|---|--:|--:|---|---|
+| 1 | `0x1f2f10d1c4…` | 60/60 | 3 | Titan | 92% | 64% | DISTRIBUTED | Titan:55, BuilderNet:4, beaverbuild:1 |
+| 2 | `0x6aba031549…` | 45/45 | 5 | Titan | 58% | 64% | DISTRIBUTED | Titan:26, Quasar:9, BuilderNet:5, Eureka:4, beaverbuild:1 |
+| 3 | `0x01fdc48ba0…` | 20/20 | 3 | bobTheBuilder | 45% | 4% | CONCENTRATED | bobTheBuilder:9, Titan:7, BuilderNet:4 |
+| 4 | `0x45e9b04942…` | 14/14 | 3 | bobTheBuilder | 43% | 4% | CONCENTRATED | bobTheBuilder:6, Titan:6, BuilderNet:2 |
+| 5 | `0x5d98f54d82…` | 8/8 | 2 | Titan | 75% | 64% | DISTRIBUTED | Titan:6, Quasar:2 |
+| 6 | `0x33b41fe18d…` | 6/6 | 3 | Titan | 67% | 64% | DISTRIBUTED | Titan:4, Eureka:1, Quasar:1 |
+| 7 | `0xad17043228…` | 5/5 | 3 | Quasar | 40% | 12% | CONCENTRATED | Quasar:2, Titan:2, BuilderNet:1 |
+| 8 | `0x49719d256a…` | 5/5 | 3 | Titan | 60% | 64% | DISTRIBUTED | Titan:3, BuilderNet:1, Quasar:1 |
+| 9 | `0x2beb773c60…` | 4/4 | 2 | Titan | 75% | 64% | DISTRIBUTED | Titan:3, Quasar:1 |
+| 10 | `0x219fc40c4c…` | 4/4 | 3 | Titan | 50% | 64% | DISTRIBUTED | Titan:2, Eureka:1, BuilderNet:1 |
+
+### Task 4 — Winner × builder cross-tab, $100–1k tier (top 5 clusters by net) [M, PARTIAL]
+
+**Partial coverage:** the $100–1k top-5 clusters span 795 blocks not in the >$1k set; the 500-block cap left budget for only a systematic ~199-block sample of them, so each cluster's builder mix is measured on the fetched subset (labeled/total column). Verdicts on partial samples — weigh by the counts.
+
+| # | Lead address | Arbs (labeled/total) | Distinct builders | Top builder | Top share | Baseline share | Verdict | Raw builder counts |
+|--:|---|--:|--:|---|--:|--:|---|---|
+| 1 | `0x6aba031549…` | 71/300 | 4 | Titan | 58% | 64% | DISTRIBUTED | Titan:41, Quasar:16, BuilderNet:8, Eureka:6 |
+| 2 | `0xbee3211ab3…` | 53/193 | 5 | Titan | 57% | 64% | DISTRIBUTED | Titan:30, Quasar:11, BuilderNet:9, Eureka:2, bombora:1 |
+| 3 | `0x1f2f10d1c4…` | 36/106 | 2 | Titan | 92% | 64% | DISTRIBUTED | Titan:33, BuilderNet:3 |
+| 4 | `0xbdb3ba9ffe…` | 33/154 | 1 | Titan | 100% | 64% | DISTRIBUTED | Titan:33 |
+| 5 | `0x9008d19f58…` | 15/59 | 4 | Titan | 40% | 64% | DISTRIBUTED | Titan:6, Quasar:4, BuilderNet:3, Eureka:2 |
+
+### What this analysis still cannot see (known-unmeasurable, stated not estimated)
+
+- **Off-chain / out-of-band payments** to builders (fiat, CEX transfers, cross-chain) — invisible on L1.
+- **Searcher–builder profit sharing** and rebates settled off-chain or netted periodically, not per-block.
+- **Exclusive order-flow agreements** (a searcher routing exclusively to one builder by contract, not visible as an on-chain payment).
+- **Vertical integration where searcher and builder are the same entity** but use unlinked addresses — a low on-chain bid then reflects self-building, not a cheap win; the builder cross-tab hints at it (INTEGRATED label) but cannot prove common ownership.
+- **Priority-fee-only private bundles**: a private bundle that pays purely via priority fee is indistinguishable from public flow, so the bid-visibility split is a lower bound on private payment.
+- **Bundle-level payments** made in a *separate* tx of the same bundle (not the arb tx) are not attributed here.
