@@ -1,0 +1,10 @@
+{
+  "latest_block": 25487778,
+  "head_ts": 1783512839,
+  "target_ts": 1782908039,
+  "start_block": 25437594,
+  "start_ts": 1782908039,
+  "end_block": 25487778,
+  "n_blocks": 50185,
+  "span_days": 7.0
+}

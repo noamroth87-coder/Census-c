@@ -1,0 +1,15 @@
+{
+  "sample_blocks": 200,
+  "candidates": 727,
+  "verdicts": {
+    "arb": 322,
+    "route_or_user": 274,
+    "unpriceable": 81,
+    "failed_measure": 50
+  },
+  "failed_to_measure_rate_pct": 11.0,
+  "unpriceable_rate_pct": 17.9,
+  "stop_threshold_pct": 20,
+  "gate": "PASSED",
+  "note": "failed-to-measure rate among arb-shaped outcomes (arb+unpriceable+failed) is 11.0%, below the 20% stop rule"
+}

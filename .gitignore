@@ -1,0 +1,7 @@
+# Large intermediate data (regenerable via the pipeline)
+out/arbs.jsonl
+out/blockstats.jsonl
+out/run.log
+out/*.output
+__pycache__/
+*.pyc

@@ -1,0 +1,43 @@
+{
+  "status": "PASSED",
+  "true_arbs_hand_verified": [
+    {
+      "tx": "0xbe05aed76c771b8336f2fb95523a48659aa20b19c00bf33fa54d20765526667d",
+      "type": "multi-asset WETH arb",
+      "gross_usd": 23.95,
+      "net_usd": 0.72,
+      "verified": "beneficiary WETH delta +0.013821, coinbase 0, gas 0.013406 \u2014 all match independent recompute"
+    },
+    {
+      "tx": "0xad444e4c47992dfeba5cb690e36e63f1ca63ddb550f42c8fd861f8ef652b4e98",
+      "type": "FLASH-LOAN-wrapped WETH arb",
+      "gross_usd": 0.49,
+      "net_usd": 0.04,
+      "verified": "FlashLoan event present; WETH +0.000281, coinbase-to-builder 0.000234, gas 0.000022 \u2014 all match"
+    },
+    {
+      "tx": "0xed38f6fd8cd3477cabd3bd6b3b0e311ba1789171cda6f99db56844a754841788",
+      "type": "USDT-denominated arb",
+      "gross_usd": 10.9,
+      "net_usd": 10.75,
+      "verified": "native ETH 0, coinbase 0, gas 0.000082 match; token legs priced via validated pool spot"
+    }
+  ],
+  "negative_controls": [
+    {
+      "tx": "0x0230a0139118ebf540bd247dadcd6e0666d313886b5ac0b828943f82189b597c",
+      "expected": "reject (USDC buy, not arb)",
+      "result": "route_or_user (gross -$54.33)"
+    },
+    {
+      "tx": "0x0bb6a39b4df583aa545923f9ba69236c5f998c2bfd98f97f5f78b253d1d51d53",
+      "expected": "failed_measure (unpriceable outflow)",
+      "result": "failed_measure (unpriceable_outflow)"
+    }
+  ],
+  "bugs_caught_by_control": [
+    "flat DUST_WEI decimals trap in cyclic test (a -54 USDC buy read as dust)",
+    "same decimals trap in unpriceable-loss check (a -12232 6-dec token outflow read as dust)",
+    "pool address selected as beneficiary"
+  ]
+}
