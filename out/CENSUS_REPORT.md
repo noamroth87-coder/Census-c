@@ -291,3 +291,83 @@ Verdict is mechanical: **INTEGRATED** = top-builder share >80% AND >2× that bui
 - **Vertical integration where searcher and builder are the same entity** but use unlinked addresses — a low on-chain bid then reflects self-building, not a cheap win; the builder cross-tab hints at it (INTEGRATED label) but cannot prove common ownership.
 - **Priority-fee-only private bundles**: a private bundle that pays purely via priority fee is indistinguishable from public flow, so the bid-visibility split is a lower bound on private payment.
 - **Bundle-level payments** made in a *separate* tx of the same bundle (not the arb tx) are not attributed here.
+
+---
+
+## Follow-up 3: refund detection and true bid — census close
+
+*Final bounded fetch: 297 `eth_getBlockReceipts` (one call/block ⇒ every tx's index, from/to, logs) + 239 traces (arb + successor of BACKRUN arbs, for native-ETH refunds) = **536 RPC calls**, under the 3,000 cap. Receipt-fetch failures: 0.0% (<15% ⇒ proceeded). Scope: the 297 blocks holding the 299 >$1k measured arbs. All [M].*
+
+### Task 1 — Backrun-adjacency of >$1k arbs [M]
+
+Predecessor = the tx immediately before the arb in-block. **BACKRUN** = predecessor is a swap touching ≥1 of the arb's own pools, by a different party (the victim). **SELF-SEQUENCED** = predecessor sent/received by the arb's own cluster. **STANDALONE** = unrelated predecessor (or arb is first in block).
+
+| Class | Count | Share |
+|---|--:|--:|
+| BACKRUN | 122 | 40.8% |
+| SELF-SEQUENCED | 7 | 2.3% |
+| STANDALONE | 170 | 56.9% |
+| **total** | 299 | 100% |
+
+Per top cluster (by >$1k arb count):
+
+| Lead address | Arbs | BACKRUN | SELF-SEQ | STANDALONE |
+|---|--:|--:|--:|--:|
+| `0x1f2f10d1c4…` | 60 | 55 | 0 | 5 |
+| `0x6aba031549…` | 45 | 5 | 1 | 39 |
+| `0x01fdc48ba0…` *(CONC)* | 20 | 20 | 0 | 0 |
+| `0x45e9b04942…` *(CONC)* | 14 | 13 | 0 | 1 |
+| `0x5d98f54d82…` | 8 | 0 | 0 | 8 |
+| `0x33b41fe18d…` | 6 | 0 | 0 | 6 |
+| `0xad17043228…` *(CONC)* | 5 | 0 | 0 | 5 |
+| `0x49719d256a…` | 5 | 0 | 0 | 5 |
+
+### Task 2 — Refund detection on BACKRUN arbs [M]
+
+Victim = predecessor's originating address. A transfer to the victim (token/WETH in logs, or native ETH via trace) inside the arb tx or its in-block successor, **≥1% of the arb's gross**, = REFUNDED. That refund is the real competitive bid returned to order flow.
+
+| Metric | Value |
+|---|--:|
+| BACKRUN arbs | 122 |
+| REFUNDED (≥1% gross to victim) | 0 (0.0%) |
+
+> **No BACKRUN arb refunds ≥1% of gross were detected on-chain.** Either these winners run no OFA/refund program, or refunds settle by a path invisible to receipts+traces (see closing unmeasurables). The real competitive bid in this tier is not visible on-chain.
+
+### Task 3 — True winner take, >$1k tier [M/derived]
+
+True net = gross − gas − builder payment − refund. (Priority fee is already inside *gas* = gas_used × effective gas price, so it is not subtracted twice; the OFA refund is the extra bid on top.) True net margin = true net ÷ gross.
+
+| Category | Count | Median true-net margin % | p75 true-net margin % |
+|---|--:|--:|--:|
+| REFUNDED | 0 | — | — |
+| BACKRUN-unrefunded | 122 | 99.72% | 99.91% |
+| STANDALONE | 170 | 99.94% | 99.98% |
+| SELF-SEQUENCED | 7 | 99.86% | 99.94% |
+
+Per top cluster — dominant category (and CONCENTRATED clusters explicitly):
+
+| Lead address | Arbs | Dominant category | Median true-net margin % | CONC? |
+|---|--:|---|--:|:--:|
+| `0x1f2f10d1c4…` | 60 | BACKRUN-unrefunded | 99.57% |  |
+| `0x6aba031549…` | 45 | STANDALONE | 99.87% |  |
+| `0x01fdc48ba0…` | 20 | BACKRUN-unrefunded | 99.76% | yes |
+| `0x45e9b04942…` | 14 | BACKRUN-unrefunded | 99.13% | yes |
+| `0x5d98f54d82…` | 8 | STANDALONE | 99.90% |  |
+| `0x33b41fe18d…` | 6 | STANDALONE | 99.99% |  |
+| `0xad17043228…` | 5 | STANDALONE | 99.97% | yes |
+| `0x49719d256a…` | 5 | STANDALONE | 99.98% |  |
+
+### Census closing summary [M]
+
+Per size bucket: **addressable** arbs/day (excluding the 3 CONCENTRATED clusters' volume), and median true-net margin. Refund/OFA is measured only in the >$1k tier (this fetch); for smaller tiers 'true net' = gross − gas − builder (refund unmeasured — stated, not assumed zero).
+
+| Bucket | Arbs | Addressable arbs/day | Median true-net margin % | Refund measured? |
+|---|--:|--:|--:|:--:|
+| <$10 | 78,577 | 11,225 | 8.63% | no (unmeasured) |
+| $10-100 | 7,089 | 1,010 | 97.82% | no (unmeasured) |
+| $100-1k | 1,953 | 273 | 99.45% | no (unmeasured) |
+| >$1k | 299 | 37 | 99.90% | yes |
+
+**Known-unmeasurables that still apply (stated, not estimated):** off-chain / out-of-band builder payments; searcher–builder profit-sharing and periodic netting; exclusive order-flow agreements; same-entity searcher+builder on unlinked addresses (self-building reads as a low bid); priority-fee-only private bundles (private flow is a lower bound); bundle-level payments in a separate tx not attributed here; OFA refunds settled off-chain or via the builder rather than an on-chain transfer to the victim; and the census's own coverage bound — 71.3% of detected arbs measured, the rest unpriceable or failed-to-measure. **The census is the measured map within these bounds; it is not a claim about what happens outside them.**
+
+*Census complete.*
