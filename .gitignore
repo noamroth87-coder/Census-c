@@ -17,3 +17,6 @@ out/cov_census.json
 out/lane_list.json
 out/lane_swaps.json
 out/lane_sight.json
+
+# read-only reference clone of the committed branch (not a source of truth)
+fixtures/census-raw/
