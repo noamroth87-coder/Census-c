@@ -8,3 +8,5 @@ __pycache__/
 out/progress.json
 out/oppage_run.log
 out/oppage_raw.json
+out/dossier_enum.json
+out/dossier_sample.json
