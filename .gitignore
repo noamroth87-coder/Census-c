@@ -5,3 +5,4 @@ out/run.log
 out/*.output
 __pycache__/
 *.pyc
+out/progress.json
