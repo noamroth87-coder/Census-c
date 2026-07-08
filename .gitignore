@@ -10,3 +10,5 @@ out/oppage_run.log
 out/oppage_raw.json
 out/dossier_enum.json
 out/dossier_sample.json
+out/vol_run.json
+out/vol_scan.json
