@@ -230,11 +230,18 @@ def render(m):
                    "**infrastructure decision**: a co-located / direct-peer or a premium low-latency "
                    "provider is required before any HOT-path work is worth building.".format(p50))
     elif p50 > 2:
+        gap_ws = f(wg['p50'], 2); gap_poll = f(pg['p50'], 2)
         verdict = (f"**Marginal / likely disqualifying for HOT-path.** p50 arrival gap {f(p50,2)} s sits "
                    "in the 2–3 s danger zone — the provider eats most of a 12 s slot before our code "
-                   "runs. Usable for observation/analytics, but for same-block backrunning this floor "
-                   "is an **infrastructure decision to escalate**: validate against a low-latency "
-                   "provider before building the HOT path on it.")
+                   f"runs. The decisive point: **WS and poll show the *same* ~{f(p50,2)} s p50 gap** "
+                   f"(WS {gap_ws} s, poll {gap_poll} s), so the floor is **provider / propagation "
+                   "latency, not transport choice** — no WS-vs-poll tuning or faster code removes it; "
+                   "only different infrastructure (co-located node / direct peer / premium low-latency "
+                   f"provider) will. Aggressive polling even edges the WS here (poll first on "
+                   f"{vp['poll_first']}/{vp['both_n']} blocks, median {f(vp['delta_ms']['p50'],0)} ms), "
+                   "confirming the WS push is not a latency advantage on this endpoint. Usable for "
+                   "observation/analytics; for same-block backrunning this is an **infrastructure "
+                   "decision to escalate** before building the HOT path on it.")
     else:
         verdict = (f"**Fit for HOT-path observation, with eyes open.** p50 arrival gap {f(p50,2)} s leaves "
                    "headroom inside a 12 s slot. The surprise is that aggressive 50 ms polling is "

@@ -1,0 +1,8 @@
+{
+ "start_wall_ns": 1783599937403911971,
+ "start_mono_ns": 423948725465,
+ "duration_s": 1800,
+ "reconnect_at_s": 900,
+ "poll_ms": 50,
+ "ws_url_host": "ethereum-mainnet.core.chainstack.com"
+}

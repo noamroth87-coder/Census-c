@@ -1,0 +1,89 @@
+{
+ "meta": {
+  "start_wall_ns": 1783599937403911971,
+  "start_mono_ns": 423948725465,
+  "duration_s": 1800,
+  "reconnect_at_s": 900,
+  "poll_ms": 50,
+  "ws_url_host": "ethereum-mainnet.core.chainstack.com"
+ },
+ "duration_s": 1800,
+ "ws_gap": {
+  "n": 149,
+  "p50": 2.0530741214752197,
+  "p90": 3.5819286346435546,
+  "p99": 4.894520311355594,
+  "min": 0.7368354797363281,
+  "max": 5.156343221664429,
+  "mean": 2.461675723927133
+ },
+ "poll_gap": {
+  "n": 151,
+  "p50": 2.0371930599212646,
+  "p90": 3.524595260620117,
+  "p99": 4.486091375350952,
+  "min": 0.6973040103912354,
+  "max": 5.20463490486145,
+  "mean": 2.399666767246676
+ },
+ "ws_vs_poll": {
+  "both_n": 149,
+  "ws_first": 31,
+  "poll_first": 118,
+  "tie": 0,
+  "delta_ms": {
+   "n": 149,
+   "p50": -51.621085,
+   "p90": 32.05489179999999,
+   "p99": 82.29695560000027,
+   "min": -872.41396,
+   "max": 144.987915,
+   "mean": -67.81849510067114
+  }
+ },
+ "reliability": {
+  "ws": {
+   "distinct": 149,
+   "duplicates": 0,
+   "out_of_order": 0,
+   "missed_count": 1,
+   "missed": [
+    25495085
+   ],
+   "span": [
+    25495011,
+    25495160
+   ]
+  },
+  "poll": {
+   "distinct": 151,
+   "duplicates": 0,
+   "out_of_order": 0,
+   "missed_count": 0,
+   "missed": [],
+   "span": [
+    25495010,
+    25495160
+   ]
+  }
+ },
+ "reconnect": {
+  "kill_mono": 1323962684331,
+  "time_to_recover_s": 11.562728789,
+  "blocks_missed_during_reconnect": [
+   25495085
+  ],
+  "n_missed_during_reconnect": 1
+ },
+ "backfilled_ts": 2,
+ "provider": {
+  "rate_limited": 0,
+  "http_errors": 0,
+  "ws_errors": 0
+ },
+ "winner": "poll",
+ "latency_floor": {
+  "p50": 2.0371930599212646,
+  "p99": 4.486091375350952
+ }
+}
