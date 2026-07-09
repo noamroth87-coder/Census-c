@@ -20,3 +20,10 @@ out/lane_sight.json
 
 # read-only reference clone of the committed branch (not a source of truth)
 fixtures/census-raw/
+
+# atom-1 live run artifacts (in-flight / regenerable). Final raw_timings.jsonl, metrics.json
+# and REPORT.md are force-added once the 30-min run completes (task requires them committed).
+mainnet-bot/atoms/01_headers/run.log
+mainnet-bot/atoms/01_headers/raw_timings.jsonl
+mainnet-bot/atoms/01_headers/metrics.json
+mainnet-bot/atoms/01_headers/run_meta.json
