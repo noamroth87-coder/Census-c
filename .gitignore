@@ -32,3 +32,4 @@ mainnet-bot/atoms/01_headers/raw_timings_premium.jsonl
 mainnet-bot/atoms/01_headers/metrics_premium.json
 mainnet-bot/atoms/01_headers/run_meta_premium.json
 mainnet-bot/atoms/01_headers/REPORT_premium.md
+analysis/vc_run.log
