@@ -1,0 +1,203 @@
+{
+ "meta": {},
+ "duration_s": 1800,
+ "sources": [
+  "prem_http",
+  "prem_wss",
+  "beacon",
+  "baseline_wss"
+ ],
+ "label": {
+  "prem_http": "Chainstack exec HTTP poll 50ms (premium)",
+  "prem_wss": "Chainstack exec WSS newHeads (premium)",
+  "beacon": "Chainstack consensus head-poll 50ms (premium)",
+  "baseline_wss": "atom-1 baseline WSS newHeads (key URL)"
+ },
+ "gap": {
+  "prem_http": {
+   "n": 148,
+   "p50": 2.052520990371704,
+   "p90": 3.276545763015748,
+   "p99": 5.06735942363739,
+   "min": -5.478979587554932,
+   "max": 12.140162467956543,
+   "mean": 2.3310898365201176
+  },
+  "prem_wss": {
+   "n": 147,
+   "p50": 1.9859604835510254,
+   "p90": 3.367415523529053,
+   "p99": 5.298274621963497,
+   "min": -4.536329746246338,
+   "max": 5.704625129699707,
+   "mean": 2.229311310515112
+  },
+  "beacon": {
+   "n": 123,
+   "p50": 2.432673454284668,
+   "p90": 3.8055557250976557,
+   "p99": 4.980064492225647,
+   "min": -6.286888122558594,
+   "max": 12.216552019119263,
+   "mean": 2.520677874727947
+  },
+  "baseline_wss": {
+   "n": 146,
+   "p50": 1.971012830734253,
+   "p90": 3.213790535926819,
+   "p99": 5.258305966854098,
+   "min": -4.648170471191406,
+   "max": 5.621654272079468,
+   "mean": 2.232060336086848
+  }
+ },
+ "reliability": {
+  "prem_http": {
+   "distinct": 148,
+   "duplicates": 0,
+   "out_of_order": 0,
+   "missed_count": 0,
+   "missed": []
+  },
+  "prem_wss": {
+   "distinct": 147,
+   "duplicates": 1,
+   "out_of_order": 0,
+   "missed_count": 0,
+   "missed": []
+  },
+  "beacon": {
+   "distinct": 123,
+   "duplicates": 0,
+   "out_of_order": 0,
+   "missed_count": 25,
+   "missed": [
+    25495290,
+    25495291,
+    25495303,
+    25495304,
+    25495305,
+    25495306,
+    25495307,
+    25495311,
+    25495318,
+    25495334,
+    25495348,
+    25495349,
+    25495350,
+    25495351,
+    25495361,
+    25495362,
+    25495363,
+    25495364,
+    25495374,
+    25495375,
+    25495376,
+    25495386,
+    25495387,
+    25495389,
+    25495400
+   ]
+  },
+  "baseline_wss": {
+   "distinct": 146,
+   "duplicates": 1,
+   "out_of_order": 0,
+   "missed_count": 1,
+   "missed": [
+    25495320
+   ]
+  }
+ },
+ "first_fire": {
+  "prem_http": 71,
+  "prem_wss": 38,
+  "beacon": 25,
+  "baseline_wss": 14
+ },
+ "consensus_vs": {
+  "prem_wss": {
+   "n": 122,
+   "beacon_first": 49,
+   "exec_first": 73,
+   "tie": 0,
+   "delta_ms": {
+    "n": 122,
+    "p50": -18.798531500000003,
+    "p90": 153.13646730000002,
+    "p99": 1460.8826389800017,
+    "min": -3000.283024,
+    "max": 1750.557895,
+    "mean": -207.65217780327868
+   }
+  },
+  "prem_http": {
+   "n": 123,
+   "beacon_first": 49,
+   "exec_first": 74,
+   "tie": 0,
+   "delta_ms": {
+    "n": 123,
+    "p50": -26.068572,
+    "p90": 366.59826699999996,
+    "p99": 801.58660136,
+    "min": -3239.134075,
+    "max": 837.922132,
+    "mean": -154.09940393495935
+   }
+  },
+  "baseline_wss": {
+   "n": 121,
+   "beacon_first": 56,
+   "exec_first": 65,
+   "tie": 0,
+   "delta_ms": {
+    "n": 121,
+    "p50": -12.765586,
+    "p90": 119.217273,
+    "p99": 1487.2122935999985,
+    "min": -3101.072075,
+    "max": 1638.716859,
+    "mean": -207.2343537768595
+   }
+  }
+ },
+ "prem_wss_vs_baseline": {
+  "n": 146,
+  "p50": 13.095734,
+  "p90": 86.0680135,
+  "p99": 169.23893560000045,
+  "min": -251.426169,
+  "max": 268.230476,
+  "mean": 5.7711364109589045
+ },
+ "reconnect": {
+  "prem_http": {
+   "time_to_recover_s": 2.498100357,
+   "blocks_missed": 0
+  },
+  "beacon": {
+   "time_to_recover_s": 3.253722513,
+   "blocks_missed": 0
+  }
+ },
+ "rate_limited": {
+  "prem_http": 0,
+  "prem_wss": 0,
+  "beacon": 0,
+  "baseline_wss": 0
+ },
+ "errors": {
+  "prem_http": 1,
+  "prem_wss": 0,
+  "beacon": 1,
+  "baseline_wss": 0
+ },
+ "backfilled_ts": 0,
+ "winner": "prem_http",
+ "latency_floor": {
+  "p50": 2.052520990371704,
+  "p99": 5.06735942363739
+ },
+ "blocks_total": 148
+}

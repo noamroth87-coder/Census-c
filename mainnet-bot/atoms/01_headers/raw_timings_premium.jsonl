@@ -1,0 +1,577 @@
+{"event": "start", "mono_ns": 725599251486, "wall_ns": 1783603222574813094, "duration_s": 1800, "poll_ms": 50, "reconnect_schedule_s": {"prem_wss": 600, "baseline_wss": 900, "prem_http": 1200, "beacon": 1500}}
+{"src": "prem_http", "kind": "blocknum", "num": 25495283, "wall_ns": 1783603223140162629, "mono_ns": 726164602953, "ts": null}
+{"event": "ws_subscribed", "src": "prem_wss", "mono_ns": 726246953419, "wall_ns": 1783603223222514702}
+{"src": "beacon", "kind": "head", "num": 25495283, "wall_ns": 1783603223216552020, "mono_ns": 726240992054, "ts": 1783603211, "slot": 14731599}
+{"event": "ws_subscribed", "src": "baseline_wss", "mono_ns": 726840774515, "wall_ns": 1783603223816335574}
+{"src": "prem_http", "kind": "blocknum", "num": 25495284, "wall_ns": 1783603224818710903, "mono_ns": 727843151386, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495284, "wall_ns": 1783603224849256515, "mono_ns": 727873696558, "ts": 1783603223}
+{"src": "beacon", "kind": "head", "num": 25495284, "wall_ns": 1783603224914717457, "mono_ns": 727939158351, "ts": 1783603223, "slot": 14731600}
+{"src": "prem_wss", "kind": "header", "num": 25495284, "wall_ns": 1783603225089838326, "mono_ns": 728114277945, "ts": 1783603223}
+{"src": "prem_http", "kind": "blocknum", "num": 25495285, "wall_ns": 1783603236984015510, "mono_ns": 740008455667, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495285, "wall_ns": 1783603237002692770, "mono_ns": 740027132524, "ts": 1783603235}
+{"src": "beacon", "kind": "head", "num": 25495285, "wall_ns": 1783603237019168142, "mono_ns": 740043608217, "ts": 1783603235, "slot": 14731601}
+{"src": "prem_wss", "kind": "header", "num": 25495285, "wall_ns": 1783603237180058093, "mono_ns": 740204497774, "ts": 1783603235}
+{"src": "baseline_wss", "kind": "header", "num": 25495286, "wall_ns": 1783603248762428036, "mono_ns": 751786867705, "ts": 1783603247}
+{"src": "prem_http", "kind": "blocknum", "num": 25495286, "wall_ns": 1783603248771991289, "mono_ns": 751796431431, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495286, "wall_ns": 1783603248873700521, "mono_ns": 751898140288, "ts": 1783603247}
+{"src": "beacon", "kind": "head", "num": 25495286, "wall_ns": 1783603248757957413, "mono_ns": 751782397760, "ts": 1783603247, "slot": 14731602}
+{"src": "baseline_wss", "kind": "header", "num": 25495287, "wall_ns": 1783603262142283918, "mono_ns": 765166724026, "ts": 1783603259}
+{"src": "prem_http", "kind": "blocknum", "num": 25495287, "wall_ns": 1783603262192619873, "mono_ns": 765217060417, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495287, "wall_ns": 1783603262393710359, "mono_ns": 765418150195, "ts": 1783603259}
+{"src": "beacon", "kind": "head", "num": 25495287, "wall_ns": 1783603262324254204, "mono_ns": 765348695087, "ts": 1783603259, "slot": 14731603}
+{"src": "prem_http", "kind": "blocknum", "num": 25495288, "wall_ns": 1783603272672713399, "mono_ns": 775697154151, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495288, "wall_ns": 1783603272721136955, "mono_ns": 775745576510, "ts": 1783603271}
+{"src": "beacon", "kind": "head", "num": 25495288, "wall_ns": 1783603272653165823, "mono_ns": 775677606496, "ts": 1783603271, "slot": 14731604}
+{"src": "prem_wss", "kind": "header", "num": 25495288, "wall_ns": 1783603272847157070, "mono_ns": 775871596965, "ts": 1783603271}
+{"src": "prem_http", "kind": "blocknum", "num": 25495289, "wall_ns": 1783603284931980370, "mono_ns": 787956420953, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495289, "wall_ns": 1783603285037378954, "mono_ns": 788061818659, "ts": 1783603283}
+{"src": "beacon", "kind": "head", "num": 25495289, "wall_ns": 1783603284929704692, "mono_ns": 787954145439, "ts": 1783603283, "slot": 14731605}
+{"src": "prem_wss", "kind": "header", "num": 25495289, "wall_ns": 1783603285083043086, "mono_ns": 788107482861, "ts": 1783603283}
+{"src": "prem_http", "kind": "blocknum", "num": 25495290, "wall_ns": 1783603296836424569, "mono_ns": 799860864837, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495290, "wall_ns": 1783603296909836438, "mono_ns": 799934276115, "ts": 1783603295}
+{"src": "prem_wss", "kind": "header", "num": 25495290, "wall_ns": 1783603297145896434, "mono_ns": 800170336160, "ts": 1783603295}
+{"src": "prem_http", "kind": "blocknum", "num": 25495291, "wall_ns": 1783603308603088437, "mono_ns": 811627529112, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495291, "wall_ns": 1783603308732317572, "mono_ns": 811756757344, "ts": 1783603307}
+{"src": "prem_wss", "kind": "header", "num": 25495291, "wall_ns": 1783603308757434091, "mono_ns": 811781873865, "ts": 1783603307}
+{"src": "prem_http", "kind": "blocknum", "num": 25495292, "wall_ns": 1783603322689690762, "mono_ns": 825714131608, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495292, "wall_ns": 1783603322726431992, "mono_ns": 825750871908, "ts": 1783603319}
+{"src": "prem_wss", "kind": "header", "num": 25495292, "wall_ns": 1783603322785628343, "mono_ns": 825810068215, "ts": 1783603319}
+{"src": "beacon", "kind": "head", "num": 25495292, "wall_ns": 1783603323389946826, "mono_ns": 826414387382, "ts": 1783603319, "slot": 14731608}
+{"src": "prem_http", "kind": "blocknum", "num": 25495293, "wall_ns": 1783603333111757314, "mono_ns": 836136198242, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495293, "wall_ns": 1783603333178451572, "mono_ns": 836202891205, "ts": 1783603331}
+{"src": "prem_wss", "kind": "header", "num": 25495293, "wall_ns": 1783603333203100559, "mono_ns": 836227540480, "ts": 1783603331}
+{"src": "beacon", "kind": "head", "num": 25495293, "wall_ns": 1783603334023951618, "mono_ns": 837048392706, "ts": 1783603331, "slot": 14731609}
+{"src": "prem_http", "kind": "blocknum", "num": 25495294, "wall_ns": 1783603344625645534, "mono_ns": 847650086740, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495294, "wall_ns": 1783603344647746037, "mono_ns": 847672185921, "ts": 1783603343}
+{"src": "baseline_wss", "kind": "header", "num": 25495294, "wall_ns": 1783603344771802888, "mono_ns": 847796242630, "ts": 1783603343}
+{"src": "beacon", "kind": "head", "num": 25495294, "wall_ns": 1783603344764320208, "mono_ns": 847788761490, "ts": 1783603343, "slot": 14731610}
+{"src": "prem_http", "kind": "blocknum", "num": 25495295, "wall_ns": 1783603358075146264, "mono_ns": 861099586925, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495295, "wall_ns": 1783603358207323871, "mono_ns": 861231763573, "ts": 1783603355}
+{"src": "beacon", "kind": "head", "num": 25495295, "wall_ns": 1783603358099461296, "mono_ns": 861123901933, "ts": 1783603355, "slot": 14731611}
+{"src": "prem_wss", "kind": "header", "num": 25495295, "wall_ns": 1783603358392396678, "mono_ns": 861416836565, "ts": 1783603355}
+{"src": "prem_http", "kind": "blocknum", "num": 25495296, "wall_ns": 1783603368668673515, "mono_ns": 871693114506, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495296, "wall_ns": 1783603368715078051, "mono_ns": 871739517944, "ts": 1783603367}
+{"src": "beacon", "kind": "head", "num": 25495296, "wall_ns": 1783603368690329532, "mono_ns": 871714770000, "ts": 1783603367, "slot": 14731612}
+{"src": "prem_wss", "kind": "header", "num": 25495296, "wall_ns": 1783603368947293608, "mono_ns": 871971733356, "ts": 1783603367}
+{"src": "prem_http", "kind": "blocknum", "num": 25495297, "wall_ns": 1783603380798052055, "mono_ns": 883822492676, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495297, "wall_ns": 1783603380972373228, "mono_ns": 883996813205, "ts": 1783603379}
+{"src": "prem_wss", "kind": "header", "num": 25495297, "wall_ns": 1783603380986994225, "mono_ns": 884011434179, "ts": 1783603379}
+{"src": "beacon", "kind": "head", "num": 25495297, "wall_ns": 1783603380840515644, "mono_ns": 883864956388, "ts": 1783603379, "slot": 14731613}
+{"src": "prem_http", "kind": "blocknum", "num": 25495298, "wall_ns": 1783603391669438524, "mono_ns": 894693878795, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495298, "wall_ns": 1783603391776603965, "mono_ns": 894801043813, "ts": 1783603391}
+{"src": "beacon", "kind": "head", "num": 25495298, "wall_ns": 1783603391736403362, "mono_ns": 894760844024, "ts": 1783603391, "slot": 14731614}
+{"src": "prem_wss", "kind": "header", "num": 25495298, "wall_ns": 1783603391833598992, "mono_ns": 894858038764, "ts": 1783603391}
+{"src": "prem_http", "kind": "blocknum", "num": 25495299, "wall_ns": 1783603404756243483, "mono_ns": 907780683782, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495299, "wall_ns": 1783603404894306117, "mono_ns": 907918745782, "ts": 1783603403}
+{"src": "prem_wss", "kind": "header", "num": 25495299, "wall_ns": 1783603404995095072, "mono_ns": 908019534833, "ts": 1783603403}
+{"src": "beacon", "kind": "head", "num": 25495299, "wall_ns": 1783603407995377533, "mono_ns": 911019817857, "ts": 1783603403, "slot": 14731615}
+{"src": "beacon", "kind": "head", "num": 25495300, "wall_ns": 1783603420713111796, "mono_ns": 923737552344, "ts": 1783603415, "slot": 14731616}
+{"src": "prem_http", "kind": "blocknum", "num": 25495300, "wall_ns": 1783603421521020371, "mono_ns": 924545461242, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495300, "wall_ns": 1783603422351829521, "mono_ns": 925376269203, "ts": 1783603415}
+{"src": "prem_wss", "kind": "header", "num": 25495300, "wall_ns": 1783603422463670266, "mono_ns": 925488110239, "ts": 1783603415}
+{"src": "baseline_wss", "kind": "header", "num": 25495300, "wall_ns": 1783603429337570031, "mono_ns": 932362009859, "ts": 1783603427}
+{"src": "prem_wss", "kind": "header", "num": 25495300, "wall_ns": 1783603429573821589, "mono_ns": 932598261338, "ts": 1783603427}
+{"event": "beacon_map_exc", "src": "beacon", "err": "ProxyError", "slot": 14731617, "mono_ns": 931592717334}
+{"src": "prem_http", "kind": "blocknum", "num": 25495301, "wall_ns": 1783603440827363643, "mono_ns": 943851804490, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495301, "wall_ns": 1783603440875414826, "mono_ns": 943899855002, "ts": 1783603439}
+{"src": "prem_wss", "kind": "header", "num": 25495301, "wall_ns": 1783603441102677375, "mono_ns": 944127117272, "ts": 1783603439}
+{"src": "beacon", "kind": "head", "num": 25495301, "wall_ns": 1783603440929746832, "mono_ns": 943954187613, "ts": 1783603439, "slot": 14731618}
+{"src": "prem_http", "kind": "blocknum", "num": 25495302, "wall_ns": 1783603453954821629, "mono_ns": 956979261776, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495302, "wall_ns": 1783603454179433995, "mono_ns": 957203873666, "ts": 1783603451}
+{"src": "beacon", "kind": "head", "num": 25495302, "wall_ns": 1783603454000897699, "mono_ns": 957025338039, "ts": 1783603451, "slot": 14731619}
+{"src": "prem_wss", "kind": "header", "num": 25495302, "wall_ns": 1783603454341766053, "mono_ns": 957366205855, "ts": 1783603451}
+{"src": "prem_http", "kind": "blocknum", "num": 25495303, "wall_ns": 1783603464658221406, "mono_ns": 967682661903, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495303, "wall_ns": 1783603464712355018, "mono_ns": 967736794930, "ts": 1783603463}
+{"src": "baseline_wss", "kind": "header", "num": 25495303, "wall_ns": 1783603464829003875, "mono_ns": 967853443655, "ts": 1783603463}
+{"src": "prem_http", "kind": "blocknum", "num": 25495304, "wall_ns": 1783603478416620732, "mono_ns": 981441061374, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495304, "wall_ns": 1783603478418641167, "mono_ns": 981443081211, "ts": 1783603475}
+{"src": "baseline_wss", "kind": "header", "num": 25495304, "wall_ns": 1783603478537029776, "mono_ns": 981561469777, "ts": 1783603475}
+{"src": "prem_http", "kind": "blocknum", "num": 25495305, "wall_ns": 1783603489808009038, "mono_ns": 992832449488, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495305, "wall_ns": 1783603489921693138, "mono_ns": 992946132911, "ts": 1783603487}
+{"src": "baseline_wss", "kind": "header", "num": 25495305, "wall_ns": 1783603489961919526, "mono_ns": 992986359310, "ts": 1783603487}
+{"src": "prem_http", "kind": "blocknum", "num": 25495306, "wall_ns": 1783603500836926082, "mono_ns": 1003861366281, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495306, "wall_ns": 1783603500994674933, "mono_ns": 1004019114665, "ts": 1783603499}
+{"src": "baseline_wss", "kind": "header", "num": 25495306, "wall_ns": 1783603501075283525, "mono_ns": 1004099723317, "ts": 1783603499}
+{"src": "prem_http", "kind": "blocknum", "num": 25495307, "wall_ns": 1783603512691109188, "mono_ns": 1015715549812, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495307, "wall_ns": 1783603512728035722, "mono_ns": 1015752475508, "ts": 1783603511}
+{"src": "baseline_wss", "kind": "header", "num": 25495307, "wall_ns": 1783603512767045094, "mono_ns": 1015791484882, "ts": 1783603511}
+{"src": "prem_http", "kind": "blocknum", "num": 25495308, "wall_ns": 1783603525012703350, "mono_ns": 1028037144355, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495308, "wall_ns": 1783603525153728278, "mono_ns": 1028178168504, "ts": 1783603523}
+{"src": "prem_wss", "kind": "header", "num": 25495308, "wall_ns": 1783603525201306470, "mono_ns": 1028225746348, "ts": 1783603523}
+{"src": "beacon", "kind": "head", "num": 25495308, "wall_ns": 1783603526159043397, "mono_ns": 1029183484252, "ts": 1783603523, "slot": 14731625}
+{"event": "ws_subscribed", "src": "prem_wss", "mono_ns": 1038855078690, "wall_ns": 1783603535830640187}
+{"src": "prem_wss", "kind": "header", "num": 25495309, "wall_ns": 1783603538530759289, "mono_ns": 1041555199049, "ts": 1783603535}
+{"src": "baseline_wss", "kind": "header", "num": 25495309, "wall_ns": 1783603538620414102, "mono_ns": 1041644854004, "ts": 1783603535}
+{"src": "prem_http", "kind": "blocknum", "num": 25495309, "wall_ns": 1783603538632531225, "mono_ns": 1041656971857, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495309, "wall_ns": 1783603538605137191, "mono_ns": 1041629578026, "ts": 1783603535, "slot": 14731626}
+{"src": "prem_http", "kind": "blocknum", "num": 25495310, "wall_ns": 1783603548765861568, "mono_ns": 1051790302532, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495310, "wall_ns": 1783603548772641556, "mono_ns": 1051797082174, "ts": 1783603547, "slot": 14731627}
+{"src": "prem_wss", "kind": "header", "num": 25495310, "wall_ns": 1783603548993944690, "mono_ns": 1052018384506, "ts": 1783603547}
+{"src": "baseline_wss", "kind": "header", "num": 25495310, "wall_ns": 1783603549111961570, "mono_ns": 1052136401368, "ts": 1783603547}
+{"src": "prem_http", "kind": "blocknum", "num": 25495311, "wall_ns": 1783603561322312215, "mono_ns": 1064346752603, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495311, "wall_ns": 1783603561356076067, "mono_ns": 1064380515930, "ts": 1783603559}
+{"src": "baseline_wss", "kind": "header", "num": 25495311, "wall_ns": 1783603561369838820, "mono_ns": 1064394279061, "ts": 1783603559}
+{"src": "prem_wss", "kind": "header", "num": 25495312, "wall_ns": 1783603572732656601, "mono_ns": 1075757096837, "ts": 1783603571}
+{"src": "prem_http", "kind": "blocknum", "num": 25495312, "wall_ns": 1783603572740064652, "mono_ns": 1075764504996, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495312, "wall_ns": 1783603572737858203, "mono_ns": 1075762298488, "ts": 1783603571, "slot": 14731629}
+{"src": "baseline_wss", "kind": "header", "num": 25495312, "wall_ns": 1783603573000887498, "mono_ns": 1076025327313, "ts": 1783603571}
+{"src": "prem_http", "kind": "blocknum", "num": 25495313, "wall_ns": 1783603585687990321, "mono_ns": 1088712431076, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495313, "wall_ns": 1783603585723223996, "mono_ns": 1088747663852, "ts": 1783603583}
+{"src": "baseline_wss", "kind": "header", "num": 25495313, "wall_ns": 1783603585809482029, "mono_ns": 1088833922258, "ts": 1783603583}
+{"src": "beacon", "kind": "head", "num": 25495313, "wall_ns": 1783603585714058260, "mono_ns": 1088738499648, "ts": 1783603583, "slot": 14731630}
+{"src": "prem_http", "kind": "blocknum", "num": 25495314, "wall_ns": 1783603598249877429, "mono_ns": 1101274318394, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495314, "wall_ns": 1783603598365974232, "mono_ns": 1101390414160, "ts": 1783603595}
+{"src": "prem_wss", "kind": "header", "num": 25495314, "wall_ns": 1783603598367819051, "mono_ns": 1101392258872, "ts": 1783603595}
+{"src": "beacon", "kind": "head", "num": 25495314, "wall_ns": 1783603598308361476, "mono_ns": 1101332802149, "ts": 1783603595, "slot": 14731631}
+{"src": "prem_http", "kind": "blocknum", "num": 25495315, "wall_ns": 1783603608698217357, "mono_ns": 1111722658110, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495315, "wall_ns": 1783603608747268649, "mono_ns": 1111771708566, "ts": 1783603607}
+{"src": "baseline_wss", "kind": "header", "num": 25495315, "wall_ns": 1783603608872746870, "mono_ns": 1111897186817, "ts": 1783603607}
+{"src": "beacon", "kind": "head", "num": 25495315, "wall_ns": 1783603608726986629, "mono_ns": 1111751427336, "ts": 1783603607, "slot": 14731632}
+{"src": "prem_wss", "kind": "header", "num": 25495316, "wall_ns": 1783603622863258623, "mono_ns": 1125887698504, "ts": 1783603619}
+{"src": "prem_http", "kind": "blocknum", "num": 25495316, "wall_ns": 1783603622925553407, "mono_ns": 1125949993777, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495316, "wall_ns": 1783603622861512852, "mono_ns": 1125885953127, "ts": 1783603619, "slot": 14731633}
+{"src": "baseline_wss", "kind": "header", "num": 25495316, "wall_ns": 1783603623011088389, "mono_ns": 1126035528298, "ts": 1783603619}
+{"src": "prem_wss", "kind": "header", "num": 25495317, "wall_ns": 1783603632644735167, "mono_ns": 1135669175078, "ts": 1783603631}
+{"src": "prem_http", "kind": "blocknum", "num": 25495317, "wall_ns": 1783603632687846819, "mono_ns": 1135712287588, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495317, "wall_ns": 1783603632724151900, "mono_ns": 1135748591747, "ts": 1783603631}
+{"src": "beacon", "kind": "head", "num": 25495317, "wall_ns": 1783603633579106299, "mono_ns": 1136603546935, "ts": 1783603631, "slot": 14731634}
+{"src": "prem_wss", "kind": "header", "num": 25495318, "wall_ns": 1783603644763957380, "mono_ns": 1147788397413, "ts": 1783603643}
+{"src": "prem_http", "kind": "blocknum", "num": 25495318, "wall_ns": 1783603644791013114, "mono_ns": 1147815454160, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495318, "wall_ns": 1783603644903985761, "mono_ns": 1147928425654, "ts": 1783603643}
+{"src": "prem_http", "kind": "blocknum", "num": 25495319, "wall_ns": 1783603656937909589, "mono_ns": 1159962350047, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495319, "wall_ns": 1783603656985960394, "mono_ns": 1160010400258, "ts": 1783603655}
+{"src": "baseline_wss", "kind": "header", "num": 25495319, "wall_ns": 1783603657048881401, "mono_ns": 1160073321658, "ts": 1783603655}
+{"src": "beacon", "kind": "head", "num": 25495319, "wall_ns": 1783603656929663600, "mono_ns": 1159954104385, "ts": 1783603655, "slot": 14731636}
+{"src": "prem_http", "kind": "blocknum", "num": 25495320, "wall_ns": 1783603669625586519, "mono_ns": 1172650026624, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495320, "wall_ns": 1783603669670507273, "mono_ns": 1172694946980, "ts": 1783603667}
+{"src": "beacon", "kind": "head", "num": 25495320, "wall_ns": 1783603669623131960, "mono_ns": 1172647572463, "ts": 1783603667, "slot": 14731637}
+{"event": "ws_subscribed", "src": "baseline_wss", "mono_ns": 1172829769296, "wall_ns": 1783603669805330659}
+{"src": "prem_http", "kind": "blocknum", "num": 25495321, "wall_ns": 1783603680704125226, "mono_ns": 1183728566555, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495321, "wall_ns": 1783603680744126306, "mono_ns": 1183768566128, "ts": 1783603679}
+{"src": "prem_wss", "kind": "header", "num": 25495321, "wall_ns": 1783603680773262573, "mono_ns": 1183797702513, "ts": 1783603679}
+{"src": "beacon", "kind": "head", "num": 25495321, "wall_ns": 1783603680719762415, "mono_ns": 1183744203015, "ts": 1783603679, "slot": 14731638}
+{"src": "prem_http", "kind": "blocknum", "num": 25495322, "wall_ns": 1783603692588674726, "mono_ns": 1195613115393, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495322, "wall_ns": 1783603692657686890, "mono_ns": 1195682127066, "ts": 1783603691}
+{"src": "baseline_wss", "kind": "header", "num": 25495322, "wall_ns": 1783603692702958030, "mono_ns": 1195727397944, "ts": 1783603691}
+{"src": "beacon", "kind": "head", "num": 25495322, "wall_ns": 1783603692603129060, "mono_ns": 1195627569741, "ts": 1783603691, "slot": 14731639}
+{"src": "prem_wss", "kind": "header", "num": 25495323, "wall_ns": 1783603704866738688, "mono_ns": 1207891178462, "ts": 1783603703}
+{"src": "prem_http", "kind": "blocknum", "num": 25495323, "wall_ns": 1783603704891362675, "mono_ns": 1207915802807, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495323, "wall_ns": 1783603704973350372, "mono_ns": 1207997790360, "ts": 1783603703}
+{"src": "beacon", "kind": "head", "num": 25495323, "wall_ns": 1783603704878766552, "mono_ns": 1207903206871, "ts": 1783603703, "slot": 14731640}
+{"src": "prem_http", "kind": "blocknum", "num": 25495324, "wall_ns": 1783603716783983494, "mono_ns": 1219808424182, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495324, "wall_ns": 1783603716786288868, "mono_ns": 1219810728524, "ts": 1783603715}
+{"src": "prem_wss", "kind": "header", "num": 25495324, "wall_ns": 1783603716787964714, "mono_ns": 1219812404321, "ts": 1783603715}
+{"src": "beacon", "kind": "head", "num": 25495324, "wall_ns": 1783603716804417123, "mono_ns": 1219828857322, "ts": 1783603715, "slot": 14731641}
+{"src": "baseline_wss", "kind": "header", "num": 25495325, "wall_ns": 1783603728733388737, "mono_ns": 1231757828476, "ts": 1783603727}
+{"src": "prem_wss", "kind": "header", "num": 25495325, "wall_ns": 1783603728752298621, "mono_ns": 1231776738388, "ts": 1783603727}
+{"src": "beacon", "kind": "head", "num": 25495325, "wall_ns": 1783603728646956696, "mono_ns": 1231671396977, "ts": 1783603727, "slot": 14731642}
+{"src": "prem_http", "kind": "blocknum", "num": 25495325, "wall_ns": 1783603728859923074, "mono_ns": 1231884363488, "ts": null}
+{"src": "prem_http", "kind": "blocknum", "num": 25495326, "wall_ns": 1783603740625074883, "mono_ns": 1243649515826, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495326, "wall_ns": 1783603740648259378, "mono_ns": 1243672699148, "ts": 1783603739}
+{"src": "prem_wss", "kind": "header", "num": 25495326, "wall_ns": 1783603740652305654, "mono_ns": 1243676745334, "ts": 1783603739}
+{"src": "beacon", "kind": "head", "num": 25495326, "wall_ns": 1783603741823071709, "mono_ns": 1244847512313, "ts": 1783603739, "slot": 14731643}
+{"src": "prem_http", "kind": "blocknum", "num": 25495327, "wall_ns": 1783603753052568048, "mono_ns": 1256077008973, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495327, "wall_ns": 1783603753066462514, "mono_ns": 1256090902282, "ts": 1783603751}
+{"src": "baseline_wss", "kind": "header", "num": 25495327, "wall_ns": 1783603753093644312, "mono_ns": 1256118084556, "ts": 1783603751}
+{"src": "beacon", "kind": "head", "num": 25495327, "wall_ns": 1783603753638669154, "mono_ns": 1256663110477, "ts": 1783603751, "slot": 14731644}
+{"src": "prem_http", "kind": "blocknum", "num": 25495328, "wall_ns": 1783603764623247472, "mono_ns": 1267647688507, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495328, "wall_ns": 1783603764658118703, "mono_ns": 1267682592382, "ts": 1783603763}
+{"src": "prem_wss", "kind": "header", "num": 25495328, "wall_ns": 1783603764688494487, "mono_ns": 1267712934332, "ts": 1783603763}
+{"src": "beacon", "kind": "head", "num": 25495328, "wall_ns": 1783603765330309359, "mono_ns": 1268354750105, "ts": 1783603763, "slot": 14731645}
+{"src": "prem_http", "kind": "blocknum", "num": 25495329, "wall_ns": 1783603776565026724, "mono_ns": 1279589467021, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495329, "wall_ns": 1783603776583020853, "mono_ns": 1279607460576, "ts": 1783603775}
+{"src": "baseline_wss", "kind": "header", "num": 25495329, "wall_ns": 1783603776608041497, "mono_ns": 1279632481234, "ts": 1783603775}
+{"src": "beacon", "kind": "head", "num": 25495329, "wall_ns": 1783603777384163577, "mono_ns": 1280408603808, "ts": 1783603775, "slot": 14731646}
+{"src": "prem_wss", "kind": "header", "num": 25495330, "wall_ns": 1783603788671168383, "mono_ns": 1291695608154, "ts": 1783603787}
+{"src": "baseline_wss", "kind": "header", "num": 25495330, "wall_ns": 1783603788681493665, "mono_ns": 1291705933393, "ts": 1783603787}
+{"event": "poll_exc", "src": "prem_http", "err": "ReadTimeout", "mono_ns": 1291837540016}
+{"src": "prem_http", "kind": "blocknum", "num": 25495330, "wall_ns": 1783603789544656045, "mono_ns": 1292569097105, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495330, "wall_ns": 1783603789432673516, "mono_ns": 1292457113865, "ts": 1783603787, "slot": 14731647}
+{"src": "beacon", "kind": "head", "num": 25495331, "wall_ns": 1783603802330906605, "mono_ns": 1305355347430, "ts": 1783603799, "slot": 14731648}
+{"src": "prem_http", "kind": "blocknum", "num": 25495331, "wall_ns": 1783603803168828660, "mono_ns": 1306193269562, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495331, "wall_ns": 1783603803851096843, "mono_ns": 1306875536707, "ts": 1783603799}
+{"src": "baseline_wss", "kind": "header", "num": 25495331, "wall_ns": 1783603803928448654, "mono_ns": 1306952888568, "ts": 1783603799}
+{"src": "baseline_wss", "kind": "header", "num": 25495332, "wall_ns": 1783603811864028177, "mono_ns": 1314888467964, "ts": 1783603811}
+{"src": "prem_wss", "kind": "header", "num": 25495332, "wall_ns": 1783603811864222218, "mono_ns": 1314888661859, "ts": 1783603811}
+{"src": "prem_http", "kind": "blocknum", "num": 25495332, "wall_ns": 1783603811890585249, "mono_ns": 1314915025524, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495332, "wall_ns": 1783603811902436199, "mono_ns": 1314926876269, "ts": 1783603811, "slot": 14731649}
+{"src": "prem_wss", "kind": "header", "num": 25495333, "wall_ns": 1783603824731963174, "mono_ns": 1327756403411, "ts": 1783603823}
+{"src": "prem_http", "kind": "blocknum", "num": 25495333, "wall_ns": 1783603824742776098, "mono_ns": 1327767216322, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495333, "wall_ns": 1783603824754587013, "mono_ns": 1327779026870, "ts": 1783603823}
+{"src": "beacon", "kind": "head", "num": 25495333, "wall_ns": 1783603824737439784, "mono_ns": 1327761880135, "ts": 1783603823, "slot": 14731650}
+{"src": "prem_http", "kind": "blocknum", "num": 25495334, "wall_ns": 1783603836712877612, "mono_ns": 1339737317651, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495334, "wall_ns": 1783603836874437479, "mono_ns": 1339898877263, "ts": 1783603835}
+{"src": "prem_wss", "kind": "header", "num": 25495334, "wall_ns": 1783603836913583985, "mono_ns": 1339938023705, "ts": 1783603835}
+{"src": "prem_http", "kind": "blocknum", "num": 25495335, "wall_ns": 1783603848862434745, "mono_ns": 1351886875229, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495335, "wall_ns": 1783603848908551352, "mono_ns": 1351932991075, "ts": 1783603847}
+{"src": "prem_wss", "kind": "header", "num": 25495335, "wall_ns": 1783603848938389295, "mono_ns": 1351962829016, "ts": 1783603847}
+{"src": "beacon", "kind": "head", "num": 25495335, "wall_ns": 1783603848959532930, "mono_ns": 1351983973078, "ts": 1783603847, "slot": 14731652}
+{"src": "prem_http", "kind": "blocknum", "num": 25495336, "wall_ns": 1783603861220822019, "mono_ns": 1364245263045, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495336, "wall_ns": 1783603861251737096, "mono_ns": 1364276176922, "ts": 1783603859}
+{"src": "baseline_wss", "kind": "header", "num": 25495336, "wall_ns": 1783603861309876605, "mono_ns": 1364334316328, "ts": 1783603859}
+{"src": "beacon", "kind": "head", "num": 25495336, "wall_ns": 1783603861223198714, "mono_ns": 1364247638902, "ts": 1783603859, "slot": 14731653}
+{"src": "prem_http", "kind": "blocknum", "num": 25495337, "wall_ns": 1783603874338771725, "mono_ns": 1377363212326, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495337, "wall_ns": 1783603874367146416, "mono_ns": 1377391586239, "ts": 1783603871}
+{"src": "baseline_wss", "kind": "header", "num": 25495337, "wall_ns": 1783603874371441377, "mono_ns": 1377395881196, "ts": 1783603871}
+{"src": "beacon", "kind": "head", "num": 25495337, "wall_ns": 1783603874336312674, "mono_ns": 1377360753137, "ts": 1783603871, "slot": 14731654}
+{"src": "prem_http", "kind": "blocknum", "num": 25495338, "wall_ns": 1783603885774639681, "mono_ns": 1388799081541, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495338, "wall_ns": 1783603885825707979, "mono_ns": 1388850147867, "ts": 1783603883}
+{"src": "prem_wss", "kind": "header", "num": 25495338, "wall_ns": 1783603885825918202, "mono_ns": 1388850357851, "ts": 1783603883}
+{"src": "beacon", "kind": "head", "num": 25495338, "wall_ns": 1783603885794771459, "mono_ns": 1388819212165, "ts": 1783603883, "slot": 14731655}
+{"src": "prem_http", "kind": "blocknum", "num": 25495339, "wall_ns": 1783603897917546703, "mono_ns": 1400941986969, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495339, "wall_ns": 1783603897922150519, "mono_ns": 1400946590367, "ts": 1783603895}
+{"src": "beacon", "kind": "head", "num": 25495339, "wall_ns": 1783603897912556011, "mono_ns": 1400936996705, "ts": 1783603895, "slot": 14731656}
+{"src": "baseline_wss", "kind": "header", "num": 25495339, "wall_ns": 1783603898108905996, "mono_ns": 1401133345873, "ts": 1783603895}
+{"src": "prem_http", "kind": "blocknum", "num": 25495340, "wall_ns": 1783603908710473274, "mono_ns": 1411734914186, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495340, "wall_ns": 1783603908712480270, "mono_ns": 1411736920110, "ts": 1783603907}
+{"src": "baseline_wss", "kind": "header", "num": 25495340, "wall_ns": 1783603908755885585, "mono_ns": 1411780325469, "ts": 1783603907}
+{"src": "beacon", "kind": "head", "num": 25495340, "wall_ns": 1783603908723768633, "mono_ns": 1411748208999, "ts": 1783603907, "slot": 14731657}
+{"src": "prem_wss", "kind": "header", "num": 25495341, "wall_ns": 1783603919942214699, "mono_ns": 1422966654570, "ts": 1783603919}
+{"src": "prem_http", "kind": "blocknum", "num": 25495341, "wall_ns": 1783603919961975140, "mono_ns": 1422986415921, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495341, "wall_ns": 1783603920033456279, "mono_ns": 1423057896066, "ts": 1783603919}
+{"src": "beacon", "kind": "head", "num": 25495341, "wall_ns": 1783603921194529356, "mono_ns": 1424218969771, "ts": 1783603919, "slot": 14731658}
+{"src": "prem_http", "kind": "blocknum", "num": 25495342, "wall_ns": 1783603933805949059, "mono_ns": 1436830397574, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495342, "wall_ns": 1783603933890447486, "mono_ns": 1436914887228, "ts": 1783603931}
+{"src": "baseline_wss", "kind": "header", "num": 25495342, "wall_ns": 1783603933930619870, "mono_ns": 1436955059808, "ts": 1783603931}
+{"src": "beacon", "kind": "head", "num": 25495342, "wall_ns": 1783603935092869917, "mono_ns": 1438117311075, "ts": 1783603931, "slot": 14731659}
+{"src": "prem_http", "kind": "blocknum", "num": 25495343, "wall_ns": 1783603944967390034, "mono_ns": 1447991830628, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495343, "wall_ns": 1783603945012317639, "mono_ns": 1448036757349, "ts": 1783603943}
+{"src": "baseline_wss", "kind": "header", "num": 25495343, "wall_ns": 1783603945045546123, "mono_ns": 1448069986001, "ts": 1783603943}
+{"src": "beacon", "kind": "head", "num": 25495343, "wall_ns": 1783603946125048984, "mono_ns": 1449149490031, "ts": 1783603943, "slot": 14731660}
+{"src": "prem_http", "kind": "blocknum", "num": 25495344, "wall_ns": 1783603956646247983, "mono_ns": 1459670688398, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495344, "wall_ns": 1783603956703512176, "mono_ns": 1459727952073, "ts": 1783603955}
+{"src": "baseline_wss", "kind": "header", "num": 25495344, "wall_ns": 1783603956795313958, "mono_ns": 1459819753899, "ts": 1783603955}
+{"src": "beacon", "kind": "head", "num": 25495344, "wall_ns": 1783603957489682482, "mono_ns": 1460514123393, "ts": 1783603955, "slot": 14731661}
+{"src": "prem_http", "kind": "blocknum", "num": 25495345, "wall_ns": 1783603969935300443, "mono_ns": 1472959740897, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495345, "wall_ns": 1783603970062517865, "mono_ns": 1473086957600, "ts": 1783603967}
+{"src": "baseline_wss", "kind": "header", "num": 25495345, "wall_ns": 1783603970115877906, "mono_ns": 1473140317615, "ts": 1783603967}
+{"src": "beacon", "kind": "head", "num": 25495345, "wall_ns": 1783603971257602093, "mono_ns": 1474282042382, "ts": 1783603967, "slot": 14731662}
+{"src": "prem_http", "kind": "blocknum", "num": 25495346, "wall_ns": 1783603980566673656, "mono_ns": 1483591114495, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495346, "wall_ns": 1783603980588751234, "mono_ns": 1483613191016, "ts": 1783603979}
+{"src": "baseline_wss", "kind": "header", "num": 25495346, "wall_ns": 1783603980608795307, "mono_ns": 1483633235180, "ts": 1783603979}
+{"src": "beacon", "kind": "head", "num": 25495346, "wall_ns": 1783603980680329117, "mono_ns": 1483704769837, "ts": 1783603979, "slot": 14731663}
+{"src": "prem_http", "kind": "blocknum", "num": 25495347, "wall_ns": 1783603992626354888, "mono_ns": 1495650796427, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495347, "wall_ns": 1783603992678043226, "mono_ns": 1495702483113, "ts": 1783603991}
+{"src": "baseline_wss", "kind": "header", "num": 25495347, "wall_ns": 1783603992692785285, "mono_ns": 1495717225031, "ts": 1783603991}
+{"src": "beacon", "kind": "head", "num": 25495347, "wall_ns": 1783603992681676437, "mono_ns": 1495706116804, "ts": 1783603991, "slot": 14731664}
+{"src": "prem_http", "kind": "blocknum", "num": 25495348, "wall_ns": 1783604005101865097, "mono_ns": 1508126305508, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495348, "wall_ns": 1783604005200734465, "mono_ns": 1508225174232, "ts": 1783604003}
+{"src": "baseline_wss", "kind": "header", "num": 25495348, "wall_ns": 1783604005238491558, "mono_ns": 1508262931180, "ts": 1783604003}
+{"src": "prem_http", "kind": "blocknum", "num": 25495349, "wall_ns": 1783604017982292423, "mono_ns": 1521006733128, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495349, "wall_ns": 1783604018020593293, "mono_ns": 1521045033249, "ts": 1783604015}
+{"src": "baseline_wss", "kind": "header", "num": 25495349, "wall_ns": 1783604018071963626, "mono_ns": 1521096403436, "ts": 1783604015}
+{"src": "prem_wss", "kind": "header", "num": 25495350, "wall_ns": 1783604028748279748, "mono_ns": 1531772719593, "ts": 1783604027}
+{"src": "baseline_wss", "kind": "header", "num": 25495350, "wall_ns": 1783604028811553041, "mono_ns": 1531835992764, "ts": 1783604027}
+{"src": "prem_http", "kind": "blocknum", "num": 25495350, "wall_ns": 1783604028844352450, "mono_ns": 1531868793532, "ts": null}
+{"src": "prem_http", "kind": "blocknum", "num": 25495351, "wall_ns": 1783604040694914117, "mono_ns": 1543719354432, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495351, "wall_ns": 1783604040715144713, "mono_ns": 1543739584470, "ts": 1783604039}
+{"src": "baseline_wss", "kind": "header", "num": 25495351, "wall_ns": 1783604040748164413, "mono_ns": 1543772604276, "ts": 1783604039}
+{"src": "prem_wss", "kind": "header", "num": 25495352, "wall_ns": 1783604054572456059, "mono_ns": 1557596895768, "ts": 1783604051}
+{"src": "baseline_wss", "kind": "header", "num": 25495352, "wall_ns": 1783604054596622215, "mono_ns": 1557621061968, "ts": 1783604051}
+{"src": "prem_http", "kind": "blocknum", "num": 25495352, "wall_ns": 1783604054617101651, "mono_ns": 1557641541900, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495352, "wall_ns": 1783604055925773451, "mono_ns": 1558950213521, "ts": 1783604051, "slot": 14731669}
+{"src": "prem_wss", "kind": "header", "num": 25495353, "wall_ns": 1783604065010038094, "mono_ns": 1568034477979, "ts": 1783604063}
+{"src": "prem_http", "kind": "blocknum", "num": 25495353, "wall_ns": 1783604065052474026, "mono_ns": 1568076914497, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495353, "wall_ns": 1783604065057986892, "mono_ns": 1568082426708, "ts": 1783604063}
+{"src": "beacon", "kind": "head", "num": 25495353, "wall_ns": 1783604065449831057, "mono_ns": 1568474271476, "ts": 1783604063, "slot": 14731670}
+{"src": "prem_http", "kind": "blocknum", "num": 25495354, "wall_ns": 1783604078793484266, "mono_ns": 1581817924704, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495354, "wall_ns": 1783604078813296570, "mono_ns": 1581837736517, "ts": 1783604075}
+{"src": "baseline_wss", "kind": "header", "num": 25495354, "wall_ns": 1783604078836167794, "mono_ns": 1581860607725, "ts": 1783604075}
+{"src": "beacon", "kind": "head", "num": 25495354, "wall_ns": 1783604079303419643, "mono_ns": 1582327860060, "ts": 1783604075, "slot": 14731671}
+{"src": "prem_wss", "kind": "header", "num": 25495355, "wall_ns": 1783604089003908908, "mono_ns": 1592028348671, "ts": 1783604087}
+{"src": "baseline_wss", "kind": "header", "num": 25495355, "wall_ns": 1783604089040291753, "mono_ns": 1592064731511, "ts": 1783604087}
+{"src": "prem_http", "kind": "blocknum", "num": 25495355, "wall_ns": 1783604089054652520, "mono_ns": 1592079093482, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495355, "wall_ns": 1783604089186554568, "mono_ns": 1592210995015, "ts": 1783604087, "slot": 14731672}
+{"src": "prem_http", "kind": "blocknum", "num": 25495356, "wall_ns": 1783604102365141290, "mono_ns": 1605389582166, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495356, "wall_ns": 1783604102399291734, "mono_ns": 1605423731661, "ts": 1783604099}
+{"src": "baseline_wss", "kind": "header", "num": 25495356, "wall_ns": 1783604102436976963, "mono_ns": 1605461416926, "ts": 1783604099}
+{"src": "beacon", "kind": "head", "num": 25495356, "wall_ns": 1783604102506962610, "mono_ns": 1605531403659, "ts": 1783604099, "slot": 14731673}
+{"src": "prem_http", "kind": "blocknum", "num": 25495357, "wall_ns": 1783604112972314510, "mono_ns": 1615996754823, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495357, "wall_ns": 1783604112974043952, "mono_ns": 1615998483675, "ts": 1783604111}
+{"src": "prem_wss", "kind": "header", "num": 25495357, "wall_ns": 1783604113014713863, "mono_ns": 1616039153648, "ts": 1783604111}
+{"src": "beacon", "kind": "head", "num": 25495357, "wall_ns": 1783604113052868597, "mono_ns": 1616077308587, "ts": 1783604111, "slot": 14731674}
+{"src": "prem_http", "kind": "blocknum", "num": 25495358, "wall_ns": 1783604125717691587, "mono_ns": 1628742132517, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495358, "wall_ns": 1783604125784703044, "mono_ns": 1628809143065, "ts": 1783604123}
+{"src": "prem_wss", "kind": "header", "num": 25495358, "wall_ns": 1783604125795653775, "mono_ns": 1628820093758, "ts": 1783604123}
+{"src": "beacon", "kind": "head", "num": 25495358, "wall_ns": 1783604125760744596, "mono_ns": 1628785185768, "ts": 1783604123, "slot": 14731675}
+{"src": "prem_wss", "kind": "header", "num": 25495359, "wall_ns": 1783604135841640912, "mono_ns": 1638866080852, "ts": 1783604135}
+{"src": "baseline_wss", "kind": "header", "num": 25495359, "wall_ns": 1783604135849332275, "mono_ns": 1638873772036, "ts": 1783604135}
+{"src": "prem_http", "kind": "blocknum", "num": 25495359, "wall_ns": 1783604135866093968, "mono_ns": 1638890534588, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495359, "wall_ns": 1783604135917273863, "mono_ns": 1638941714570, "ts": 1783604135, "slot": 14731676}
+{"src": "prem_wss", "kind": "header", "num": 25495360, "wall_ns": 1783604148892511932, "mono_ns": 1651916951845, "ts": 1783604147}
+{"src": "prem_http", "kind": "blocknum", "num": 25495360, "wall_ns": 1783604148898326134, "mono_ns": 1651922766621, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495360, "wall_ns": 1783604148936618023, "mono_ns": 1651961057789, "ts": 1783604147}
+{"src": "beacon", "kind": "head", "num": 25495360, "wall_ns": 1783604148931868716, "mono_ns": 1651956309558, "ts": 1783604147, "slot": 14731677}
+{"src": "prem_http", "kind": "blocknum", "num": 25495361, "wall_ns": 1783604160972916489, "mono_ns": 1663997356903, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495361, "wall_ns": 1783604161001304983, "mono_ns": 1664025744878, "ts": 1783604159}
+{"src": "prem_wss", "kind": "header", "num": 25495361, "wall_ns": 1783604161001575708, "mono_ns": 1664026015361, "ts": 1783604159}
+{"src": "prem_http", "kind": "blocknum", "num": 25495362, "wall_ns": 1783604173248622339, "mono_ns": 1676273063565, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495362, "wall_ns": 1783604173271066277, "mono_ns": 1676295506034, "ts": 1783604171}
+{"src": "baseline_wss", "kind": "header", "num": 25495362, "wall_ns": 1783604173273938192, "mono_ns": 1676298377866, "ts": 1783604171}
+{"src": "prem_http", "kind": "blocknum", "num": 25495363, "wall_ns": 1783604187378223797, "mono_ns": 1690402664471, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495363, "wall_ns": 1783604187992227791, "mono_ns": 1691016667670, "ts": 1783604183}
+{"src": "baseline_wss", "kind": "header", "num": 25495363, "wall_ns": 1783604188125334044, "mono_ns": 1691149773669, "ts": 1783604183}
+{"src": "prem_wss", "kind": "header", "num": 25495364, "wall_ns": 1783604196767941618, "mono_ns": 1699792381405, "ts": 1783604195}
+{"src": "prem_http", "kind": "blocknum", "num": 25495364, "wall_ns": 1783604196790604874, "mono_ns": 1699815045188, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495364, "wall_ns": 1783604196819843766, "mono_ns": 1699844283583, "ts": 1783604195}
+{"src": "prem_wss", "kind": "header", "num": 25495365, "wall_ns": 1783604208943998750, "mono_ns": 1711968439099, "ts": 1783604207}
+{"src": "baseline_wss", "kind": "header", "num": 25495365, "wall_ns": 1783604208960799728, "mono_ns": 1711985239874, "ts": 1783604207}
+{"src": "prem_http", "kind": "blocknum", "num": 25495365, "wall_ns": 1783604208986559258, "mono_ns": 1712010999792, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495365, "wall_ns": 1783604208973564238, "mono_ns": 1711998005460, "ts": 1783604207, "slot": 14731682}
+{"src": "prem_http", "kind": "blocknum", "num": 25495366, "wall_ns": 1783604220783646148, "mono_ns": 1723808086433, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495366, "wall_ns": 1783604220841409244, "mono_ns": 1723865849041, "ts": 1783604219}
+{"src": "baseline_wss", "kind": "header", "num": 25495366, "wall_ns": 1783604220901715570, "mono_ns": 1723926155266, "ts": 1783604219}
+{"src": "beacon", "kind": "head", "num": 25495366, "wall_ns": 1783604220785801324, "mono_ns": 1723810241631, "ts": 1783604219, "slot": 14731683}
+{"src": "prem_http", "kind": "blocknum", "num": 25495367, "wall_ns": 1783604232621939954, "mono_ns": 1735646380874, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495367, "wall_ns": 1783604232642946477, "mono_ns": 1735667386372, "ts": 1783604231}
+{"src": "baseline_wss", "kind": "header", "num": 25495367, "wall_ns": 1783604232644585580, "mono_ns": 1735669025195, "ts": 1783604231}
+{"src": "beacon", "kind": "head", "num": 25495367, "wall_ns": 1783604232650073245, "mono_ns": 1735674513589, "ts": 1783604231, "slot": 14731684}
+{"src": "prem_http", "kind": "blocknum", "num": 25495368, "wall_ns": 1783604246185645777, "mono_ns": 1749210086607, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495368, "wall_ns": 1783604246210925760, "mono_ns": 1749235365686, "ts": 1783604243}
+{"src": "baseline_wss", "kind": "header", "num": 25495368, "wall_ns": 1783604246220257339, "mono_ns": 1749244697569, "ts": 1783604243}
+{"src": "beacon", "kind": "head", "num": 25495368, "wall_ns": 1783604247003229817, "mono_ns": 1750027670231, "ts": 1783604243, "slot": 14731685}
+{"src": "prem_http", "kind": "blocknum", "num": 25495369, "wall_ns": 1783604258007794317, "mono_ns": 1761032235510, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495369, "wall_ns": 1783604258129241162, "mono_ns": 1761153681069, "ts": 1783604255}
+{"src": "baseline_wss", "kind": "header", "num": 25495369, "wall_ns": 1783604258158187024, "mono_ns": 1761182627136, "ts": 1783604255}
+{"src": "beacon", "kind": "head", "num": 25495369, "wall_ns": 1783604258605000346, "mono_ns": 1761629441060, "ts": 1783604255, "slot": 14731686}
+{"src": "prem_http", "kind": "blocknum", "num": 25495370, "wall_ns": 1783604268756297010, "mono_ns": 1771780738140, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495370, "wall_ns": 1783604268791371396, "mono_ns": 1771815811281, "ts": 1783604267}
+{"src": "baseline_wss", "kind": "header", "num": 25495370, "wall_ns": 1783604268804563909, "mono_ns": 1771829004042, "ts": 1783604267}
+{"src": "beacon", "kind": "head", "num": 25495370, "wall_ns": 1783604269539361984, "mono_ns": 1772563802532, "ts": 1783604267, "slot": 14731687}
+{"src": "prem_http", "kind": "blocknum", "num": 25495371, "wall_ns": 1783604280841728912, "mono_ns": 1783866169731, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495371, "wall_ns": 1783604280844127635, "mono_ns": 1783868567753, "ts": 1783604279}
+{"src": "baseline_wss", "kind": "header", "num": 25495371, "wall_ns": 1783604280896753818, "mono_ns": 1783921193714, "ts": 1783604279}
+{"src": "beacon", "kind": "head", "num": 25495371, "wall_ns": 1783604280874130156, "mono_ns": 1783898571810, "ts": 1783604279, "slot": 14731688}
+{"src": "prem_http", "kind": "blocknum", "num": 25495372, "wall_ns": 1783604293663538652, "mono_ns": 1796687979114, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495372, "wall_ns": 1783604293723145817, "mono_ns": 1796747585526, "ts": 1783604291}
+{"src": "baseline_wss", "kind": "header", "num": 25495372, "wall_ns": 1783604293742030414, "mono_ns": 1796766470098, "ts": 1783604291}
+{"src": "beacon", "kind": "head", "num": 25495372, "wall_ns": 1783604293732350312, "mono_ns": 1796756790391, "ts": 1783604291, "slot": 14731689}
+{"src": "prem_http", "kind": "blocknum", "num": 25495373, "wall_ns": 1783604304711326834, "mono_ns": 1807735767256, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495373, "wall_ns": 1783604304846691638, "mono_ns": 1807871131419, "ts": 1783604303}
+{"src": "prem_wss", "kind": "header", "num": 25495373, "wall_ns": 1783604304853084968, "mono_ns": 1807877524679, "ts": 1783604303}
+{"src": "beacon", "kind": "head", "num": 25495373, "wall_ns": 1783604304802343766, "mono_ns": 1807826784036, "ts": 1783604303, "slot": 14731690}
+{"src": "prem_http", "kind": "blocknum", "num": 25495374, "wall_ns": 1783604316720703897, "mono_ns": 1819745144316, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495374, "wall_ns": 1783604316786070820, "mono_ns": 1819810511084, "ts": 1783604315}
+{"src": "prem_wss", "kind": "header", "num": 25495374, "wall_ns": 1783604316836338391, "mono_ns": 1819860778552, "ts": 1783604315}
+{"src": "baseline_wss", "kind": "header", "num": 25495375, "wall_ns": 1783604328999723283, "mono_ns": 1832024163086, "ts": 1783604327}
+{"src": "prem_wss", "kind": "header", "num": 25495375, "wall_ns": 1783604329013503334, "mono_ns": 1832037943309, "ts": 1783604327}
+{"src": "prem_http", "kind": "blocknum", "num": 25495375, "wall_ns": 1783604329102344758, "mono_ns": 1832126785851, "ts": null}
+{"src": "prem_http", "kind": "blocknum", "num": 25495376, "wall_ns": 1783604341912830523, "mono_ns": 1844937270574, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495376, "wall_ns": 1783604341964186282, "mono_ns": 1844988626119, "ts": 1783604339}
+{"src": "prem_wss", "kind": "header", "num": 25495376, "wall_ns": 1783604341965499314, "mono_ns": 1844989939037, "ts": 1783604339}
+{"src": "prem_http", "kind": "blocknum", "num": 25495377, "wall_ns": 1783604352607917783, "mono_ns": 1855632385327, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495377, "wall_ns": 1783604352719256425, "mono_ns": 1855743696285, "ts": 1783604351}
+{"src": "baseline_wss", "kind": "header", "num": 25495377, "wall_ns": 1783604352778119021, "mono_ns": 1855802558878, "ts": 1783604351}
+{"src": "beacon", "kind": "head", "num": 25495377, "wall_ns": 1783604352676793935, "mono_ns": 1855701234691, "ts": 1783604351, "slot": 14731694}
+{"src": "prem_http", "kind": "blocknum", "num": 25495378, "wall_ns": 1783604364847104640, "mono_ns": 1867871546098, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495378, "wall_ns": 1783604364860691365, "mono_ns": 1867885131290, "ts": 1783604363}
+{"src": "baseline_wss", "kind": "header", "num": 25495378, "wall_ns": 1783604364865758837, "mono_ns": 1867890198479, "ts": 1783604363}
+{"src": "beacon", "kind": "head", "num": 25495378, "wall_ns": 1783604364862901358, "mono_ns": 1867887341800, "ts": 1783604363, "slot": 14731695}
+{"src": "prem_http", "kind": "blocknum", "num": 25495379, "wall_ns": 1783604376590345757, "mono_ns": 1879614786434, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495379, "wall_ns": 1783604376640645111, "mono_ns": 1879665084839, "ts": 1783604375}
+{"src": "baseline_wss", "kind": "header", "num": 25495379, "wall_ns": 1783604376645060288, "mono_ns": 1879669499937, "ts": 1783604375}
+{"src": "beacon", "kind": "head", "num": 25495379, "wall_ns": 1783604376634344396, "mono_ns": 1879658784651, "ts": 1783604375, "slot": 14731696}
+{"src": "prem_http", "kind": "blocknum", "num": 25495380, "wall_ns": 1783604388680933849, "mono_ns": 1891705374304, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495380, "wall_ns": 1783604388783156859, "mono_ns": 1891807596674, "ts": 1783604387}
+{"src": "baseline_wss", "kind": "header", "num": 25495380, "wall_ns": 1783604388813978728, "mono_ns": 1891838418422, "ts": 1783604387}
+{"src": "beacon", "kind": "head", "num": 25495380, "wall_ns": 1783604388722975635, "mono_ns": 1891747416036, "ts": 1783604387, "slot": 14731697}
+{"src": "prem_http", "kind": "blocknum", "num": 25495381, "wall_ns": 1783604401703661407, "mono_ns": 1904728101886, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495381, "wall_ns": 1783604401723127404, "mono_ns": 1904747567282, "ts": 1783604399}
+{"src": "baseline_wss", "kind": "header", "num": 25495381, "wall_ns": 1783604401746770167, "mono_ns": 1904771210118, "ts": 1783604399}
+{"src": "beacon", "kind": "head", "num": 25495381, "wall_ns": 1783604402361022413, "mono_ns": 1905385462821, "ts": 1783604399, "slot": 14731698}
+{"src": "prem_http", "kind": "blocknum", "num": 25495382, "wall_ns": 1783604412748283188, "mono_ns": 1915772723828, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495382, "wall_ns": 1783604412760697635, "mono_ns": 1915785137495, "ts": 1783604411}
+{"src": "baseline_wss", "kind": "header", "num": 25495382, "wall_ns": 1783604412813503726, "mono_ns": 1915837943601, "ts": 1783604411}
+{"src": "beacon", "kind": "head", "num": 25495382, "wall_ns": 1783604413763021475, "mono_ns": 1916787462081, "ts": 1783604411, "slot": 14731699}
+{"event": "reconnect_kill", "src": "prem_http", "mono_ns": 1925622089598, "wall_ns": 1783604422597650497}
+{"event": "reconnect_up", "src": "prem_http", "mono_ns": 1925622233345, "wall_ns": 1783604422597794142}
+{"src": "prem_wss", "kind": "header", "num": 25495383, "wall_ns": 1783604424975170847, "mono_ns": 1927999610601, "ts": 1783604423}
+{"src": "baseline_wss", "kind": "header", "num": 25495383, "wall_ns": 1783604425034542748, "mono_ns": 1928058982544, "ts": 1783604423}
+{"src": "prem_http", "kind": "blocknum", "num": 25495383, "wall_ns": 1783604425095749639, "mono_ns": 1928120189955, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495383, "wall_ns": 1783604425995338701, "mono_ns": 1929019779736, "ts": 1783604423, "slot": 14731700}
+{"src": "prem_wss", "kind": "header", "num": 25495384, "wall_ns": 1783604436787430832, "mono_ns": 1939811870589, "ts": 1783604435}
+{"src": "baseline_wss", "kind": "header", "num": 25495384, "wall_ns": 1783604436842306413, "mono_ns": 1939866746233, "ts": 1783604435}
+{"src": "beacon", "kind": "head", "num": 25495384, "wall_ns": 1783604436882694825, "mono_ns": 1939907135275, "ts": 1783604435, "slot": 14731701}
+{"src": "prem_http", "kind": "blocknum", "num": 25495384, "wall_ns": 1783604437170744156, "mono_ns": 1940195184639, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495385, "wall_ns": 1783604448844684646, "mono_ns": 1951869124718, "ts": 1783604447}
+{"src": "baseline_wss", "kind": "header", "num": 25495385, "wall_ns": 1783604448855620601, "mono_ns": 1951880060586, "ts": 1783604447}
+{"src": "prem_http", "kind": "blocknum", "num": 25495385, "wall_ns": 1783604448898286144, "mono_ns": 1951922727039, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495385, "wall_ns": 1783604448805129473, "mono_ns": 1951829570436, "ts": 1783604447, "slot": 14731702}
+{"src": "baseline_wss", "kind": "header", "num": 25495386, "wall_ns": 1783604460611955614, "mono_ns": 1963636395391, "ts": 1783604459}
+{"src": "prem_wss", "kind": "header", "num": 25495386, "wall_ns": 1783604460643675352, "mono_ns": 1963668115097, "ts": 1783604459}
+{"src": "prem_http", "kind": "blocknum", "num": 25495386, "wall_ns": 1783604460885794770, "mono_ns": 1963910235166, "ts": null}
+{"src": "prem_http", "kind": "blocknum", "num": 25495387, "wall_ns": 1783604472959234948, "mono_ns": 1975983675538, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495387, "wall_ns": 1783604472960978273, "mono_ns": 1975985417932, "ts": 1783604471}
+{"src": "baseline_wss", "kind": "header", "num": 25495387, "wall_ns": 1783604472969652513, "mono_ns": 1975994092559, "ts": 1783604471}
+{"src": "baseline_wss", "kind": "header", "num": 25495388, "wall_ns": 1783604484823681170, "mono_ns": 1987848121339, "ts": 1783604483}
+{"src": "prem_wss", "kind": "header", "num": 25495388, "wall_ns": 1783604484870385884, "mono_ns": 1987894825811, "ts": 1783604483}
+{"src": "prem_http", "kind": "blocknum", "num": 25495388, "wall_ns": 1783604484935623747, "mono_ns": 1987960064561, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495388, "wall_ns": 1783604484796411744, "mono_ns": 1987820852886, "ts": 1783604483, "slot": 14731705}
+{"src": "baseline_wss", "kind": "header", "num": 25495389, "wall_ns": 1783604496793068411, "mono_ns": 1999817508258, "ts": 1783604495}
+{"src": "prem_wss", "kind": "header", "num": 25495389, "wall_ns": 1783604496802159392, "mono_ns": 1999826599239, "ts": 1783604495}
+{"src": "prem_http", "kind": "blocknum", "num": 25495389, "wall_ns": 1783604496850695851, "mono_ns": 1999875136589, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495390, "wall_ns": 1783604508717733212, "mono_ns": 2011742173107, "ts": 1783604507}
+{"src": "prem_wss", "kind": "header", "num": 25495390, "wall_ns": 1783604508722709369, "mono_ns": 2011747149106, "ts": 1783604507}
+{"src": "prem_http", "kind": "blocknum", "num": 25495390, "wall_ns": 1783604509279188812, "mono_ns": 2012303629460, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495390, "wall_ns": 1783604509564737706, "mono_ns": 2012589178118, "ts": 1783604507, "slot": 14731707}
+{"src": "prem_wss", "kind": "header", "num": 25495391, "wall_ns": 1783604522091061070, "mono_ns": 2025115500873, "ts": 1783604519}
+{"src": "baseline_wss", "kind": "header", "num": 25495391, "wall_ns": 1783604522097689415, "mono_ns": 2025122129183, "ts": 1783604519}
+{"src": "prem_http", "kind": "blocknum", "num": 25495391, "wall_ns": 1783604522155502509, "mono_ns": 2025179943145, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495391, "wall_ns": 1783604523060137801, "mono_ns": 2026084577743, "ts": 1783604519, "slot": 14731708}
+{"src": "prem_wss", "kind": "header", "num": 25495392, "wall_ns": 1783604532671675758, "mono_ns": 2035696115708, "ts": 1783604531}
+{"src": "baseline_wss", "kind": "header", "num": 25495392, "wall_ns": 1783604532742270616, "mono_ns": 2035766710509, "ts": 1783604531}
+{"src": "prem_http", "kind": "blocknum", "num": 25495392, "wall_ns": 1783604533137215982, "mono_ns": 2036161656759, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495392, "wall_ns": 1783604533572569357, "mono_ns": 2036597010284, "ts": 1783604531, "slot": 14731709}
+{"src": "prem_wss", "kind": "header", "num": 25495393, "wall_ns": 1783604545001399759, "mono_ns": 2048025839672, "ts": 1783604543}
+{"src": "baseline_wss", "kind": "header", "num": 25495393, "wall_ns": 1783604545009288024, "mono_ns": 2048033728142, "ts": 1783604543}
+{"src": "beacon", "kind": "head", "num": 25495393, "wall_ns": 1783604545094872952, "mono_ns": 2048119313735, "ts": 1783604543, "slot": 14731710}
+{"src": "prem_http", "kind": "blocknum", "num": 25495393, "wall_ns": 1783604545396833804, "mono_ns": 2048421274218, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495394, "wall_ns": 1783604558039239014, "mono_ns": 2061063678777, "ts": 1783604555}
+{"src": "baseline_wss", "kind": "header", "num": 25495394, "wall_ns": 1783604558086690272, "mono_ns": 2061111130121, "ts": 1783604555}
+{"src": "beacon", "kind": "head", "num": 25495394, "wall_ns": 1783604557951766818, "mono_ns": 2060976207110, "ts": 1783604555, "slot": 14731711}
+{"src": "prem_http", "kind": "blocknum", "num": 25495394, "wall_ns": 1783604558184211799, "mono_ns": 2061208652273, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495395, "wall_ns": 1783604571614185783, "mono_ns": 2074638626186, "ts": 1783604567, "slot": 14731712}
+{"src": "prem_http", "kind": "blocknum", "num": 25495395, "wall_ns": 1783604572030129449, "mono_ns": 2075054569960, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495395, "wall_ns": 1783604572621654365, "mono_ns": 2075646094211, "ts": 1783604567}
+{"src": "prem_wss", "kind": "header", "num": 25495395, "wall_ns": 1783604572704625115, "mono_ns": 2075729064981, "ts": 1783604567}
+{"src": "prem_wss", "kind": "header", "num": 25495396, "wall_ns": 1783604580658174438, "mono_ns": 2083682614207, "ts": 1783604579}
+{"src": "baseline_wss", "kind": "header", "num": 25495396, "wall_ns": 1783604580695092684, "mono_ns": 2083719532497, "ts": 1783604579}
+{"src": "beacon", "kind": "head", "num": 25495396, "wall_ns": 1783604580664172161, "mono_ns": 2083688612216, "ts": 1783604579, "slot": 14731713}
+{"src": "prem_http", "kind": "blocknum", "num": 25495396, "wall_ns": 1783604581025318209, "mono_ns": 2084049758703, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495397, "wall_ns": 1783604593854262435, "mono_ns": 2096878702201, "ts": 1783604591}
+{"src": "baseline_wss", "kind": "header", "num": 25495397, "wall_ns": 1783604593885220650, "mono_ns": 2096909660396, "ts": 1783604591}
+{"src": "beacon", "kind": "head", "num": 25495397, "wall_ns": 1783604593841107029, "mono_ns": 2096865547282, "ts": 1783604591, "slot": 14731714}
+{"src": "prem_http", "kind": "blocknum", "num": 25495397, "wall_ns": 1783604594178535470, "mono_ns": 2097202975813, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495398, "wall_ns": 1783604604750349841, "mono_ns": 2107774789606, "ts": 1783604603}
+{"src": "baseline_wss", "kind": "header", "num": 25495398, "wall_ns": 1783604604757880264, "mono_ns": 2107782320006, "ts": 1783604603}
+{"src": "beacon", "kind": "head", "num": 25495398, "wall_ns": 1783604604790823174, "mono_ns": 2107815264133, "ts": 1783604603, "slot": 14731715}
+{"src": "prem_http", "kind": "blocknum", "num": 25495398, "wall_ns": 1783604605090688438, "mono_ns": 2108115129755, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495399, "wall_ns": 1783604616761001507, "mono_ns": 2119785441218, "ts": 1783604615}
+{"src": "beacon", "kind": "head", "num": 25495399, "wall_ns": 1783604616749504237, "mono_ns": 2119773944615, "ts": 1783604615, "slot": 14731716}
+{"src": "prem_wss", "kind": "header", "num": 25495399, "wall_ns": 1783604616900832730, "mono_ns": 2119925272490, "ts": 1783604615}
+{"src": "prem_http", "kind": "blocknum", "num": 25495399, "wall_ns": 1783604617275517701, "mono_ns": 2120299958098, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495400, "wall_ns": 1783604628563347741, "mono_ns": 2131587787613, "ts": 1783604627}
+{"src": "baseline_wss", "kind": "header", "num": 25495400, "wall_ns": 1783604628576467134, "mono_ns": 2131600907078, "ts": 1783604627}
+{"src": "prem_http", "kind": "blocknum", "num": 25495400, "wall_ns": 1783604628790189781, "mono_ns": 2131814630513, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495401, "wall_ns": 1783604641749060801, "mono_ns": 2144773500579, "ts": 1783604639}
+{"src": "baseline_wss", "kind": "header", "num": 25495401, "wall_ns": 1783604641759754510, "mono_ns": 2144784194347, "ts": 1783604639}
+{"src": "prem_http", "kind": "blocknum", "num": 25495401, "wall_ns": 1783604642071546229, "mono_ns": 2145095987062, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495401, "wall_ns": 1783604641763475388, "mono_ns": 2144787915807, "ts": 1783604639, "slot": 14731718}
+{"src": "prem_wss", "kind": "header", "num": 25495402, "wall_ns": 1783604653697962890, "mono_ns": 2156722402647, "ts": 1783604651}
+{"src": "baseline_wss", "kind": "header", "num": 25495402, "wall_ns": 1783604653745526815, "mono_ns": 2156769966577, "ts": 1783604651}
+{"src": "prem_http", "kind": "blocknum", "num": 25495402, "wall_ns": 1783604653956550545, "mono_ns": 2156980991254, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495402, "wall_ns": 1783604653837874717, "mono_ns": 2156862315852, "ts": 1783604651, "slot": 14731719}
+{"src": "prem_wss", "kind": "header", "num": 25495403, "wall_ns": 1783604665633850246, "mono_ns": 2168658290123, "ts": 1783604663}
+{"src": "baseline_wss", "kind": "header", "num": 25495403, "wall_ns": 1783604665657644396, "mono_ns": 2168682084294, "ts": 1783604663}
+{"src": "prem_http", "kind": "blocknum", "num": 25495403, "wall_ns": 1783604666034438741, "mono_ns": 2169058879306, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495403, "wall_ns": 1783604665666477157, "mono_ns": 2168690918094, "ts": 1783604663, "slot": 14731720}
+{"src": "baseline_wss", "kind": "header", "num": 25495404, "wall_ns": 1783604676580355055, "mono_ns": 2179604794950, "ts": 1783604675}
+{"src": "prem_wss", "kind": "header", "num": 25495404, "wall_ns": 1783604676600521166, "mono_ns": 2179624960914, "ts": 1783604675}
+{"src": "prem_http", "kind": "blocknum", "num": 25495404, "wall_ns": 1783604676773602303, "mono_ns": 2179798042933, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495404, "wall_ns": 1783604676700417673, "mono_ns": 2179724858711, "ts": 1783604675, "slot": 14731721}
+{"src": "baseline_wss", "kind": "header", "num": 25495405, "wall_ns": 1783604688876757494, "mono_ns": 2191901197349, "ts": 1783604687}
+{"src": "prem_wss", "kind": "header", "num": 25495405, "wall_ns": 1783604688922444585, "mono_ns": 2191946884442, "ts": 1783604687}
+{"src": "prem_http", "kind": "blocknum", "num": 25495405, "wall_ns": 1783604688947749951, "mono_ns": 2191972190666, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495405, "wall_ns": 1783604689909223123, "mono_ns": 2192933663430, "ts": 1783604687, "slot": 14731722}
+{"src": "prem_wss", "kind": "header", "num": 25495406, "wall_ns": 1783604700845796938, "mono_ns": 2203870236883, "ts": 1783604699}
+{"src": "baseline_wss", "kind": "header", "num": 25495406, "wall_ns": 1783604700860491123, "mono_ns": 2203884930991, "ts": 1783604699}
+{"src": "prem_http", "kind": "blocknum", "num": 25495406, "wall_ns": 1783604701018816495, "mono_ns": 2204043257037, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495406, "wall_ns": 1783604701522189650, "mono_ns": 2204546630426, "ts": 1783604699, "slot": 14731723}
+{"event": "reconnect_kill", "src": "beacon", "mono_ns": 2225750359002, "wall_ns": 1783604722725919763}
+{"event": "reconnect_up", "src": "beacon", "mono_ns": 2225750488663, "wall_ns": 1783604722726049446}
+{"src": "baseline_wss", "kind": "header", "num": 25495407, "wall_ns": 1783604726036740361, "mono_ns": 2229061180091, "ts": 1783604723}
+{"src": "prem_wss", "kind": "header", "num": 25495407, "wall_ns": 1783604726041847122, "mono_ns": 2229066286868, "ts": 1783604723}
+{"src": "prem_http", "kind": "blocknum", "num": 25495407, "wall_ns": 1783604726106779909, "mono_ns": 2229131221221, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495407, "wall_ns": 1783604725979640993, "mono_ns": 2229004081515, "ts": 1783604723, "slot": 14731725}
+{"src": "prem_wss", "kind": "header", "num": 25495408, "wall_ns": 1783604737756656889, "mono_ns": 2240781096749, "ts": 1783604735}
+{"src": "baseline_wss", "kind": "header", "num": 25495408, "wall_ns": 1783604737769728877, "mono_ns": 2240794168752, "ts": 1783604735}
+{"src": "prem_http", "kind": "blocknum", "num": 25495408, "wall_ns": 1783604737931026466, "mono_ns": 2240955467001, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495408, "wall_ns": 1783604737702388495, "mono_ns": 2240726829130, "ts": 1783604735, "slot": 14731726}
+{"src": "baseline_wss", "kind": "header", "num": 25495409, "wall_ns": 1783604748584497863, "mono_ns": 2251608937723, "ts": 1783604747}
+{"src": "prem_wss", "kind": "header", "num": 25495409, "wall_ns": 1783604748587544889, "mono_ns": 2251611984614, "ts": 1783604747}
+{"src": "beacon", "kind": "head", "num": 25495409, "wall_ns": 1783604748629797307, "mono_ns": 2251654237944, "ts": 1783604747, "slot": 14731727}
+{"src": "prem_http", "kind": "blocknum", "num": 25495409, "wall_ns": 1783604749000850124, "mono_ns": 2252025290665, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495410, "wall_ns": 1783604761565407165, "mono_ns": 2264589846888, "ts": 1783604759}
+{"src": "baseline_wss", "kind": "header", "num": 25495410, "wall_ns": 1783604761594934590, "mono_ns": 2264619374360, "ts": 1783604759}
+{"src": "prem_http", "kind": "blocknum", "num": 25495410, "wall_ns": 1783604762129875663, "mono_ns": 2265154316587, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495410, "wall_ns": 1783604762061321444, "mono_ns": 2265085761848, "ts": 1783604759, "slot": 14731728}
+{"src": "baseline_wss", "kind": "header", "num": 25495411, "wall_ns": 1783604773043749506, "mono_ns": 2276068189480, "ts": 1783604771}
+{"src": "prem_wss", "kind": "header", "num": 25495411, "wall_ns": 1783604773067358885, "mono_ns": 2276091799118, "ts": 1783604771}
+{"src": "beacon", "kind": "head", "num": 25495411, "wall_ns": 1783604773020638248, "mono_ns": 2276045078788, "ts": 1783604771, "slot": 14731729}
+{"src": "prem_http", "kind": "blocknum", "num": 25495411, "wall_ns": 1783604773583405018, "mono_ns": 2276607845739, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495412, "wall_ns": 1783604784677910887, "mono_ns": 2287702350651, "ts": 1783604783}
+{"src": "baseline_wss", "kind": "header", "num": 25495412, "wall_ns": 1783604784713576181, "mono_ns": 2287738015893, "ts": 1783604783}
+{"src": "beacon", "kind": "head", "num": 25495412, "wall_ns": 1783604784600679619, "mono_ns": 2287625119865, "ts": 1783604783, "slot": 14731730}
+{"src": "prem_http", "kind": "blocknum", "num": 25495412, "wall_ns": 1783604785172169448, "mono_ns": 2288196610277, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495413, "wall_ns": 1783604797087342808, "mono_ns": 2300111782669, "ts": 1783604795}
+{"src": "baseline_wss", "kind": "header", "num": 25495413, "wall_ns": 1783604797122837315, "mono_ns": 2300147277158, "ts": 1783604795}
+{"src": "beacon", "kind": "head", "num": 25495413, "wall_ns": 1783604797101285787, "mono_ns": 2300125726559, "ts": 1783604795, "slot": 14731731}
+{"src": "prem_http", "kind": "blocknum", "num": 25495413, "wall_ns": 1783604797568273349, "mono_ns": 2300592714281, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495414, "wall_ns": 1783604809717215791, "mono_ns": 2312741655530, "ts": 1783604807}
+{"src": "prem_wss", "kind": "header", "num": 25495414, "wall_ns": 1783604809733944694, "mono_ns": 2312758384460, "ts": 1783604807}
+{"src": "beacon", "kind": "head", "num": 25495414, "wall_ns": 1783604809666264217, "mono_ns": 2312690704875, "ts": 1783604807, "slot": 14731732}
+{"src": "prem_http", "kind": "blocknum", "num": 25495414, "wall_ns": 1783604810072212379, "mono_ns": 2313096653285, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495415, "wall_ns": 1783604821625648880, "mono_ns": 2324650088657, "ts": 1783604819}
+{"src": "prem_wss", "kind": "header", "num": 25495415, "wall_ns": 1783604821664751875, "mono_ns": 2324689191524, "ts": 1783604819}
+{"src": "beacon", "kind": "head", "num": 25495415, "wall_ns": 1783604821708529334, "mono_ns": 2324732969493, "ts": 1783604819, "slot": 14731733}
+{"src": "prem_http", "kind": "blocknum", "num": 25495415, "wall_ns": 1783604821988009980, "mono_ns": 2325012449867, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495416, "wall_ns": 1783604832802401955, "mono_ns": 2335826841858, "ts": 1783604831}
+{"src": "baseline_wss", "kind": "header", "num": 25495416, "wall_ns": 1783604832818086512, "mono_ns": 2335842526304, "ts": 1783604831}
+{"src": "beacon", "kind": "head", "num": 25495416, "wall_ns": 1783604832746725477, "mono_ns": 2335771166066, "ts": 1783604831, "slot": 14731734}
+{"src": "prem_http", "kind": "blocknum", "num": 25495416, "wall_ns": 1783604833231080425, "mono_ns": 2336255520881, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495417, "wall_ns": 1783604856837455738, "mono_ns": 2359861895476, "ts": 1783604855}
+{"src": "baseline_wss", "kind": "header", "num": 25495417, "wall_ns": 1783604856916583306, "mono_ns": 2359941023052, "ts": 1783604855}
+{"src": "prem_http", "kind": "blocknum", "num": 25495417, "wall_ns": 1783604857115398324, "mono_ns": 2360139838633, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495417, "wall_ns": 1783604857205256960, "mono_ns": 2360229697328, "ts": 1783604855, "slot": 14731736}
+{"src": "prem_wss", "kind": "header", "num": 25495418, "wall_ns": 1783604868708185910, "mono_ns": 2371732626106, "ts": 1783604867}
+{"src": "baseline_wss", "kind": "header", "num": 25495418, "wall_ns": 1783604868733261081, "mono_ns": 2371757700781, "ts": 1783604867}
+{"src": "prem_http", "kind": "blocknum", "num": 25495418, "wall_ns": 1783604869079142846, "mono_ns": 2372103583612, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495418, "wall_ns": 1783604869774821677, "mono_ns": 2372799262090, "ts": 1783604867, "slot": 14731737}
+{"src": "baseline_wss", "kind": "header", "num": 25495419, "wall_ns": 1783604881590476506, "mono_ns": 2384614916241, "ts": 1783604879}
+{"src": "prem_wss", "kind": "header", "num": 25495419, "wall_ns": 1783604881623932188, "mono_ns": 2384648371943, "ts": 1783604879}
+{"src": "prem_http", "kind": "blocknum", "num": 25495419, "wall_ns": 1783604881999728612, "mono_ns": 2385024169051, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495419, "wall_ns": 1783604882836839438, "mono_ns": 2385861279772, "ts": 1783604879, "slot": 14731738}
+{"src": "baseline_wss", "kind": "header", "num": 25495420, "wall_ns": 1783604892780239954, "mono_ns": 2395804679675, "ts": 1783604891}
+{"src": "prem_wss", "kind": "header", "num": 25495420, "wall_ns": 1783604892839366982, "mono_ns": 2395863806786, "ts": 1783604891}
+{"src": "prem_http", "kind": "blocknum", "num": 25495420, "wall_ns": 1783604892988316886, "mono_ns": 2396012757477, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495420, "wall_ns": 1783604893042372041, "mono_ns": 2396066812462, "ts": 1783604891, "slot": 14731739}
+{"src": "baseline_wss", "kind": "header", "num": 25495421, "wall_ns": 1783604905226043928, "mono_ns": 2408250483700, "ts": 1783604903}
+{"src": "prem_wss", "kind": "header", "num": 25495421, "wall_ns": 1783604905270740504, "mono_ns": 2408295180251, "ts": 1783604903}
+{"src": "beacon", "kind": "head", "num": 25495421, "wall_ns": 1783604905175650813, "mono_ns": 2408200091556, "ts": 1783604903, "slot": 14731740}
+{"src": "prem_http", "kind": "blocknum", "num": 25495421, "wall_ns": 1783604905735214806, "mono_ns": 2408759654849, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495422, "wall_ns": 1783604916754186144, "mono_ns": 2419778625851, "ts": 1783604915}
+{"src": "prem_wss", "kind": "header", "num": 25495422, "wall_ns": 1783604916791701552, "mono_ns": 2419816141504, "ts": 1783604915}
+{"src": "beacon", "kind": "head", "num": 25495422, "wall_ns": 1783604916759226501, "mono_ns": 2419783666592, "ts": 1783604915, "slot": 14731741}
+{"src": "prem_http", "kind": "blocknum", "num": 25495422, "wall_ns": 1783604917110194913, "mono_ns": 2420134635676, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495423, "wall_ns": 1783604930540002755, "mono_ns": 2433564442517, "ts": 1783604927}
+{"src": "prem_wss", "kind": "header", "num": 25495423, "wall_ns": 1783604930549683318, "mono_ns": 2433574123021, "ts": 1783604927}
+{"src": "prem_http", "kind": "blocknum", "num": 25495423, "wall_ns": 1783604930701036394, "mono_ns": 2433725476758, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495423, "wall_ns": 1783604930607681559, "mono_ns": 2433632121959, "ts": 1783604927, "slot": 14731742}
+{"src": "prem_wss", "kind": "header", "num": 25495424, "wall_ns": 1783604941861581138, "mono_ns": 2444886020860, "ts": 1783604939}
+{"src": "baseline_wss", "kind": "header", "num": 25495424, "wall_ns": 1783604941863414224, "mono_ns": 2444887853922, "ts": 1783604939}
+{"src": "beacon", "kind": "head", "num": 25495424, "wall_ns": 1783604941914430972, "mono_ns": 2444938871368, "ts": 1783604939, "slot": 14731743}
+{"src": "prem_http", "kind": "blocknum", "num": 25495424, "wall_ns": 1783604942161503423, "mono_ns": 2445185943429, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495425, "wall_ns": 1783604955321204015, "mono_ns": 2458345644035, "ts": 1783604951, "slot": 14731744}
+{"src": "prem_http", "kind": "blocknum", "num": 25495425, "wall_ns": 1783604956100374857, "mono_ns": 2459124815221, "ts": null}
+{"src": "baseline_wss", "kind": "header", "num": 25495425, "wall_ns": 1783604956367101093, "mono_ns": 2459391540951, "ts": 1783604951}
+{"src": "prem_wss", "kind": "header", "num": 25495425, "wall_ns": 1783604956558981002, "mono_ns": 2459583420750, "ts": 1783604951}
+{"src": "prem_wss", "kind": "header", "num": 25495426, "wall_ns": 1783604965662772559, "mono_ns": 2468687212322, "ts": 1783604963}
+{"src": "baseline_wss", "kind": "header", "num": 25495426, "wall_ns": 1783604965664703208, "mono_ns": 2468689142824, "ts": 1783604963}
+{"src": "beacon", "kind": "head", "num": 25495426, "wall_ns": 1783604965933019008, "mono_ns": 2468957459698, "ts": 1783604963, "slot": 14731745}
+{"src": "prem_http", "kind": "blocknum", "num": 25495426, "wall_ns": 1783604966146288673, "mono_ns": 2469170728981, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495427, "wall_ns": 1783604977888236838, "mono_ns": 2480912676592, "ts": 1783604975}
+{"src": "baseline_wss", "kind": "header", "num": 25495427, "wall_ns": 1783604977909397472, "mono_ns": 2480933837236, "ts": 1783604975}
+{"src": "beacon", "kind": "head", "num": 25495427, "wall_ns": 1783604978089775185, "mono_ns": 2481114215565, "ts": 1783604975, "slot": 14731746}
+{"src": "prem_http", "kind": "blocknum", "num": 25495427, "wall_ns": 1783604978390728418, "mono_ns": 2481415168748, "ts": null}
+{"src": "prem_wss", "kind": "header", "num": 25495428, "wall_ns": 1783604989796636196, "mono_ns": 2492821075936, "ts": 1783604987}
+{"src": "baseline_wss", "kind": "header", "num": 25495428, "wall_ns": 1783604989825112980, "mono_ns": 2492849552742, "ts": 1783604987}
+{"src": "prem_http", "kind": "blocknum", "num": 25495428, "wall_ns": 1783604989962154575, "mono_ns": 2492986595272, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495428, "wall_ns": 1783604990680420808, "mono_ns": 2493704861223, "ts": 1783604987, "slot": 14731747}
+{"src": "prem_wss", "kind": "header", "num": 25495429, "wall_ns": 1783605000903439694, "mono_ns": 2503927879452, "ts": 1783604999}
+{"src": "baseline_wss", "kind": "header", "num": 25495429, "wall_ns": 1783605000989317327, "mono_ns": 2504013757073, "ts": 1783604999}
+{"src": "prem_http", "kind": "blocknum", "num": 25495429, "wall_ns": 1783605001465529124, "mono_ns": 2504489969424, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495429, "wall_ns": 1783605001938155798, "mono_ns": 2504962596620, "ts": 1783604999, "slot": 14731748}
+{"src": "prem_wss", "kind": "header", "num": 25495430, "wall_ns": 1783605012611267186, "mono_ns": 2515635707120, "ts": 1783605011}
+{"src": "baseline_wss", "kind": "header", "num": 25495430, "wall_ns": 1783605012615776425, "mono_ns": 2515640216095, "ts": 1783605011}
+{"src": "prem_http", "kind": "blocknum", "num": 25495430, "wall_ns": 1783605013069959126, "mono_ns": 2516094399794, "ts": null}
+{"src": "beacon", "kind": "head", "num": 25495430, "wall_ns": 1783605013020267986, "mono_ns": 2516044708448, "ts": 1783605011, "slot": 14731749}

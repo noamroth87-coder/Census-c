@@ -1,0 +1,17 @@
+{
+ "duration_s": 1800,
+ "poll_ms": 50,
+ "reconnect_schedule_s": {
+  "prem_wss": 600,
+  "baseline_wss": 900,
+  "prem_http": 1200,
+  "beacon": 1500
+ },
+ "sources": [
+  "prem_http",
+  "prem_wss",
+  "beacon",
+  "baseline_wss"
+ ],
+ "note": "SSE unusable via agent proxy (buffered); beacon uses head-poll @50ms + slot->block mapping"
+}
